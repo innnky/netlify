@@ -1,17 +1,4 @@
 - [首页](/)
-- Maven
-  - [Maven基础](docs/Maven/Maven基础)
-  - [琐碎的东西](docs/Maven/琐碎的东西)
-- 杂项
-  - SpringBoot课设
-    - [SpringBoot](docs/杂项/SpringBoot课设/SpringBoot)
-    - [terraria](docs/杂项/SpringBoot课设/terraria)
-    - [微信小程序](docs/杂项/SpringBoot课设/微信小程序)
-  - Markdown
-    - [画图](docs/杂项/Markdown/画图)
-    - [更多操作](docs/杂项/Markdown/更多操作)
-    - [基本操作](docs/杂项/Markdown/基本操作)
-  - [科目1](docs/杂项/科目1)
 - Spring系列
   - SpringBoot
     - [SpringBoot](docs/Spring系列/SpringBoot/SpringBoot)
@@ -28,12 +15,10 @@
     - [米米商城](docs/Spring系列/SSM项目/米米商城)
 - JavaSe
   - Intermediate
-    - [未知语法](docs/JavaSe/Intermediate/未知语法)
-    - [面试题](docs/JavaSe/Intermediate/面试题)
+    - [题](docs/JavaSe/Intermediate/面试题)
     - [jdk8新特性](docs/JavaSe/Intermediate/jdk8新特性)
     - [IDEA快捷键](docs/JavaSe/Intermediate/IDEA快捷键)
     - [P488](docs/JavaSe/Intermediate/P488)
-    - [forge](docs/JavaSe/Intermediate/forge)
     - [琐碎的知识点](docs/JavaSe/Intermediate/琐碎的知识点)
     - [动态代理](docs/JavaSe/Intermediate/动态代理)
 - 中间件
@@ -84,3 +69,16 @@
     - [CSS](docs/前端/三大件/CSS)
   - axure
     - [Axure](docs/前端/axure/Axure)
+- Maven
+  - [Maven基础](docs/Maven/Maven基础)
+  - [琐碎的东西](docs/Maven/琐碎的东西)
+- 杂项
+  - SpringBoot课设
+    - [SpringBoot](docs/杂项/SpringBoot课设/SpringBoot)
+    - [terraria](docs/杂项/SpringBoot课设/terraria)
+    - [微信小程序](docs/杂项/SpringBoot课设/微信小程序)
+  - Markdown
+    - [画图](docs/杂项/Markdown/画图)
+    - [更多操作](docs/杂项/Markdown/更多操作)
+    - [基本操作](docs/杂项/Markdown/基本操作)
+  - [科目1](docs/杂项/科目1)
