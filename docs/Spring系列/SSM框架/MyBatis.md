@@ -162,7 +162,7 @@
       3. 位置传参 3.3前#{0} #{1} 3.4后#{arg0} #{arg1}
       4. map方式 #{key} 代码可读性差
     
-  + 在<select>等标签中指定parameterType="参数类的全限定名称"
+  + 在`<select>`等标签中指定parameterType="参数类的全限定名称"
     + 此处该项可以省略，因为mybatis可以通过反射机制获取到
     + 对于java基本数据类型，mybatis提供了更为简短的别名
     
