@@ -65,5 +65,68 @@
 
 ## Cinder块存储
 
+## api
+
++ 获取远程操作地址
+
+  ```
+  post
+  http://192.168.50.53:8774/v2.1/7c7ffeef0111468494a11f0427723d11/servers/{设备id}/action
+  headers
+  X-Auth-Token: {token}
+  body 
+  {
+      "os-getVNCConsole": {
+          "type": "novnc"
+      }
+  }
+  
+  返回
+  {
+      "console": {
+          "url": "http://192.168.50.53:6080/vnc_auto.html?path=%3Ftoken%3Dda70ac94-fcfd-4e19-a7f2-8ff1f9add2d4",
+          "type": "novnc"
+      }
+  }
+  ```
+
++ 登录获取token
+
+  ```shell
+  curl -i -X POST -H "Content-type: application/json" -d '{
+      "auth": {
+          "identity": {
+              "methods": [
+                  "password"
+              ],
+              "password": {
+                  "user": {
+                      "domain": {
+                          "name": "default"
+                      },
+                      "name": "admin",
+                      "password": "4f9da04bf80d4969"
+                  }
+              }
+          },
+          "scope": {
+              "project": {
+                  "domain": {
+                      "name": "default"
+                  },
+                  "name": "admin"
+              }
+          }
+      }
+  }' http://192.168.50.53:5000/v3/auth/tokens
+  
+  返回headers中
+  X-Subject-Token
+  ```
+
++ 镜像  `http://192.168.50.53:9292/v2/images`
+
+  + 带token直接get:获取所有镜像
+
 
 

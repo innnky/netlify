@@ -1,0 +1,16 @@
++ 调内基础和弦
+  + C
+  + F
+  + G
+  + Dm
+  + Em
+  + Am
++ 其他
+  + bB
+  + bBsus2
+  + C7
+  + C7sus4
+  + A
+  + C/E
+  + F7
+  + Gm7

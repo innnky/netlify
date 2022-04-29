@@ -1,4 +1,7 @@
 - [首页](/)
+- Maven
+  - [Maven基础](docs/Maven/Maven基础)
+  - [琐碎的东西](docs/Maven/琐碎的东西)
 - Spring系列
   - SpringBoot
     - [SpringBoot](docs/Spring系列/SpringBoot/SpringBoot)
@@ -15,17 +18,21 @@
     - [米米商城](docs/Spring系列/SSM项目/米米商城)
 - JavaSe
   - Intermediate
-    - [题](docs/JavaSe/Intermediate/面试题)
+    - [JUC并发编程](docs/JavaSe/Intermediate/JUC并发编程)
+    - [未知语法](docs/JavaSe/Intermediate/未知语法)
+    - [设计模式](docs/JavaSe/Intermediate/设计模式)
+    - [面试题](docs/JavaSe/Intermediate/面试题)
     - [jdk8新特性](docs/JavaSe/Intermediate/jdk8新特性)
     - [IDEA快捷键](docs/JavaSe/Intermediate/IDEA快捷键)
     - [P488](docs/JavaSe/Intermediate/P488)
+    - [forge](docs/JavaSe/Intermediate/forge)
     - [琐碎的知识点](docs/JavaSe/Intermediate/琐碎的知识点)
     - [动态代理](docs/JavaSe/Intermediate/动态代理)
 - 中间件
   - [RabbitMq](docs/中间件/RabbitMq)
   - [gradle](docs/中间件/gradle)
   - [Redis](docs/中间件/Redis)
-  - [REST API](docs/中间件/RESTAPI)
+  - [REST API](docs/中间件/REST API)
   - [SpringSecurity](docs/中间件/SpringSecurity)
   - [JWT](docs/中间件/JWT)
   - [MongoDB入门](docs/中间件/MongoDB入门)
@@ -34,6 +41,8 @@
   - [ElasticSearch](docs/中间件/ElasticSearch)
   - [Redis-cache](docs/中间件/Redis-cache)
   - [Docker](docs/中间件/Docker)
+- 纸质书笔记
+  - [并发编程](docs/纸质书笔记/并发编程)
 - idea
   - [idea](docs/idea/idea)
 - MySQL
@@ -55,7 +64,10 @@
   - [进度](docs/学习/进度)
   - [一些点](docs/学习/一些点)
   - [博客工具](docs/学习/博客工具)
+- 音乐
+  - [chord](docs/音乐/chord)
 - 毕业设计
+  - [CR](docs/毕业设计/CR)
   - [openstack](docs/毕业设计/openstack)
   - [UML](docs/毕业设计/UML)
 - 前端
@@ -69,9 +81,6 @@
     - [CSS](docs/前端/三大件/CSS)
   - axure
     - [Axure](docs/前端/axure/Axure)
-- Maven
-  - [Maven基础](docs/Maven/Maven基础)
-  - [琐碎的东西](docs/Maven/琐碎的东西)
 - 杂项
   - SpringBoot课设
     - [SpringBoot](docs/杂项/SpringBoot课设/SpringBoot)
@@ -81,4 +90,5 @@
     - [画图](docs/杂项/Markdown/画图)
     - [更多操作](docs/杂项/Markdown/更多操作)
     - [基本操作](docs/杂项/Markdown/基本操作)
+  - [Unity](docs/杂项/Unity)
   - [科目1](docs/杂项/科目1)

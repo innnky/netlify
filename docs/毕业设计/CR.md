@@ -1,0 +1,1 @@
++ mybatis 自增id获取: useGeneratedKeys="true" keyProperty="studentId"(其中keyProperty填写的是实体类中的列名称)
