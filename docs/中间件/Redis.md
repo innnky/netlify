@@ -6,7 +6,7 @@
 
 + 默认端口6379
 + 安装
-+ 命令行连接![image-20220225201243000](https://home.innky.xyz:25566/images/image-20220225201243000.png)
++ 命令行连接![image-20220225201243000](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220225201243000.png)
 + select 5切换数据库
 + dbsize flushdb清空当前库 flushall清空全部库
 + 单线程+多路io复用
@@ -45,7 +45,7 @@
 + 列表：
 
   + 底层是quicklist，两端插入效率高
-    + ![image-20220225110648437](https://home.innky.xyz:25566/images/image-20220225110648437.png)
+    + ![image-20220225110648437](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220225110648437.png)
   + 常用命令
     + lpush/rpush [key] [v1] [v2] .....
     + lpop/rpop [key] [count]
@@ -145,13 +145,13 @@
 
 + 频道
 
-  ![image-20220225114737741](https://home.innky.xyz:25566/images/image-20220225114737741.png)
+  ![image-20220225114737741](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220225114737741.png)
 
-+ ![image-20220225114823726](https://home.innky.xyz:25566/images/image-20220225114823726.png)客户端连接
++ ![image-20220225114823726](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220225114823726.png)客户端连接
 
-+ 订阅channel![image-20220225114857221](https://home.innky.xyz:25566/images/image-20220225114857221.png)
++ 订阅channel![image-20220225114857221](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220225114857221.png)
 
-+ 发布信息![image-20220225114908756](https://home.innky.xyz:25566/images/image-20220225114908756.png)
++ 发布信息![image-20220225114908756](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220225114908756.png)
 
 ## 新数据类型
 
@@ -199,8 +199,8 @@
   + .sadd(k, v1,v2) .smembers(key)
   + .....
 + 实例：手机验证码
-  + 生成个位随机数![image-20220225202508276](https://home.innky.xyz:25566/images/image-20220225202508276.png)
-  + key命名![image-20220225202616960](https://home.innky.xyz:25566/images/image-20220225202616960.png)
+  + 生成个位随机数![image-20220225202508276](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220225202508276.png)
+  + key命名![image-20220225202616960](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220225202616960.png)
   + setex(k, t, val)
 
 ## SpringBoot 整合
@@ -273,7 +273,7 @@
   + Multi 组队将命令放到队列中
   + Exec执行命令
   + 组队过程中Discard放弃组队
-+ 例![image-20220225204419087](https://home.innky.xyz:25566/images/image-20220225204419087.png)
++ 例![image-20220225204419087](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220225204419087.png)
 + 关于出错
   + 组队期间出错所有命令都不执行
   + 运行期间某条命令出错，其他命令能成功执行
@@ -294,16 +294,16 @@
 
 ### 秒杀案例
 
-+ 通过ab模拟![image-20220225212356487](https://home.innky.xyz:25566/images/image-20220225212356487.png)
++ 通过ab模拟![image-20220225212356487](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220225212356487.png)
 + ab --help
 + -n请求次数 -c并发数 -T contentType -p postfile  
 + 使用事务
-  + watch![image-20220225213700357](https://home.innky.xyz:25566/images/image-20220225213700357.png)
-  + 开启事务![image-20220225213737347](https://home.innky.xyz:25566/images/image-20220225213737347.png)
-  + 执行![image-20220225213801551](https://home.innky.xyz:25566/images/image-20220225213801551.png)
+  + watch![image-20220225213700357](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220225213700357.png)
+  + 开启事务![image-20220225213737347](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220225213737347.png)
+  + 执行![image-20220225213801551](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220225213801551.png)
 + 乐观锁导致库存遗留问题
   + 解决方案：使用lua脚本（可以写redis原子操作）
-  + ![image-20220225215151845](https://home.innky.xyz:25566/images/image-20220225215151845.png)
+  + ![image-20220225215151845](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220225215151845.png)
   + 思索：貌似是变成悲观锁了，用javaSyndronized似乎也可以？
     + 用lua大概是可以使用redis内部的多路复用？或许性能更高？
 
@@ -333,22 +333,22 @@
   + appendfsync always/everysecond/no
 + aof与rdb同时开启时优先从aof中恢复
 + 服务启动时会自动加载当前目录下aof文件
-+ 异常恢复![image-20220226122008615](https://home.innky.xyz:25566/images/image-20220226122008615.png) <filename>
++ 异常恢复![image-20220226122008615](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226122008615.png) <filename>
 + 重写压缩操作：大于64M*(1+100%)时候使用rewrite压缩
 
 ## 读写复制
 
 + 1主多从
-+ 作用![image-20220226151643440](https://home.innky.xyz:25566/images/image-20220226151643440.png)
++ 作用![image-20220226151643440](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226151643440.png)
 + 配置：
   + 创建多份配置文件
   + 公共配置关闭aof
   + 在分配置文件中引入公共的include
-  + 分配置![image-20220226152221745](https://home.innky.xyz:25566/images/image-20220226152221745.png)
-  + 启动三个redis服务![image-20220226154048378](https://home.innky.xyz:25566/images/image-20220226154048378.png)
-  + 在从机执行![image-20220226152652714](https://home.innky.xyz:25566/images/image-20220226152652714.png)（默认都是主服务器)
-+ linux![image-20220226152516827](https://home.innky.xyz:25566/images/image-20220226152516827.png)
-+ 查看主从模式![image-20220226152618479](https://home.innky.xyz:25566/images/image-20220226152618479.png)
+  + 分配置![image-20220226152221745](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226152221745.png)
+  + 启动三个redis服务![image-20220226154048378](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226154048378.png)
+  + 在从机执行![image-20220226152652714](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226152652714.png)（默认都是主服务器)
++ linux![image-20220226152516827](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226152516827.png)
++ 查看主从模式![image-20220226152618479](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226152618479.png)
 + 在从机中只能使用读操作，不能写
 
 + 特点
@@ -363,29 +363,29 @@
 
     + 主从同步通过rdb文件
 
-      ![image-20220226154536015](https://home.innky.xyz:25566/images/image-20220226154536015.png)
+      ![image-20220226154536015](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226154536015.png)
 
   + 薪火相传
 
-    + 从服务器可以再挂从服务器![image-20220226154819276](https://home.innky.xyz:25566/images/image-20220226154819276.png)
+    + 从服务器可以再挂从服务器![image-20220226154819276](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226154819276.png)
 
   + 反客为主
 
-    + 使用![image-20220226155005764](https://home.innky.xyz:25566/images/image-20220226155005764.png)将从机变成主机
+    + 使用![image-20220226155005764](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226155005764.png)将从机变成主机
 
 + 哨兵模式：反客为主自动版本
 
   + 步骤
-    + ![image-20220226155333840](https://home.innky.xyz:25566/images/image-20220226155333840.png)
-    + 哨兵配置文件中![image-20220226155416140](https://home.innky.xyz:25566/images/image-20220226155416140.png)
+    + ![image-20220226155333840](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226155333840.png)
+    + 哨兵配置文件中![image-20220226155416140](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226155416140.png)
       + 最后一个参数为投票通过数量
-    + 从机配置文件中修改优先级![image-20220226160740852](https://home.innky.xyz:25566/images/image-20220226160740852.png)
+    + 从机配置文件中修改优先级![image-20220226160740852](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226160740852.png)
       + 值越小优先级越高
-    + 启动哨兵进程![image-20220226155457699](https://home.innky.xyz:25566/images/image-20220226155457699.png)
+    + 启动哨兵进程![image-20220226155457699](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226155457699.png)
   + 主机宕机后选择一个从机作为主服务器，原主机重新启动只能变成从机
   + 存在复制延时
   + 哨兵可以有多个（弹幕）
-  + 选择从机![image-20220226160827296](https://home.innky.xyz:25566/images/image-20220226160827296.png)
+  + 选择从机![image-20220226160827296](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226160827296.png)
   + java连接（貌似是只要连哨兵？）
 
 ## 集群
@@ -396,29 +396,29 @@
 + 水平扩容，每个节点只存储1/N
 + 使用步骤
   + 创建很多配置文件一个集群至少有3个主节点
-  + 分配置文件中修改集群相关配置![image-20220226162818773](https://home.innky.xyz:25566/images/image-20220226162818773.png)
+  + 分配置文件中修改集群相关配置![image-20220226162818773](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226162818773.png)
   + 启动所有节点
   + 合并所有节点
-    + ![image-20220226163305041](https://home.innky.xyz:25566/images/image-20220226163305041.png) <ip1> <ip2> ....
-      + 其中![image-20220226163343952](https://home.innky.xyz:25566/images/image-20220226163343952.png)
+    + ![image-20220226163305041](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226163305041.png) <ip1> <ip2> ....
+      + 其中![image-20220226163343952](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226163343952.png)
       + 貌似需要在src目录下执行
       + 命令执行成功返回总slot数量，以及插槽在各主机的范围分配
-  + 以![image-20220226163709160](https://home.innky.xyz:25566/images/image-20220226163709160.png)连接（-c以集群连接)
-  + 查看节点信息![image-20220226163721644](https://home.innky.xyz:25566/images/image-20220226163721644.png)
-+ ![image-20220226163942705](https://home.innky.xyz:25566/images/image-20220226163942705.png)
+  + 以![image-20220226163709160](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226163709160.png)连接（-c以集群连接)
+  + 查看节点信息![image-20220226163721644](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226163721644.png)
++ ![image-20220226163942705](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226163942705.png)
 + 设值时通过key计算出目标插槽，通过插槽值确定存在哪个机器中
-+ 添加多个值：使用分组![image-20220226164447461](https://home.innky.xyz:25566/images/image-20220226164447461.png)
++ 添加多个值：使用分组![image-20220226164447461](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226164447461.png)
   + 计算插槽使用user计算
 + 集群命令
-  + ![image-20220226164639014](https://home.innky.xyz:25566/images/image-20220226164639014.png)查询key对应的插槽
-  + ![image-20220226164822931](https://home.innky.xyz:25566/images/image-20220226164822931.png)
-  + ![image-20220226164611346](https://home.innky.xyz:25566/images/image-20220226164611346.png)
+  + ![image-20220226164639014](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226164639014.png)查询key对应的插槽
+  + ![image-20220226164822931](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226164822931.png)
+  + ![image-20220226164611346](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226164611346.png)
 + 集群貌似会自动开启哨兵
-+ ![image-20220226165053840](https://home.innky.xyz:25566/images/image-20220226165053840.png)某段主从全挂掉后其他能否提供服务
++ ![image-20220226165053840](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226165053840.png)某段主从全挂掉后其他能否提供服务
 + Jedis操作集群
-  + 连接![image-20220226165305079](https://home.innky.xyz:25566/images/image-20220226165305079.png)
-  + 可以用set存多个ip![image-20220226165359925](https://home.innky.xyz:25566/images/image-20220226165359925.png)
-+ 不足![image-20220226165440700](https://home.innky.xyz:25566/images/image-20220226165440700.png)
+  + 连接![image-20220226165305079](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226165305079.png)
+  + 可以用set存多个ip![image-20220226165359925](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226165359925.png)
++ 不足![image-20220226165440700](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226165440700.png)
 
 ## Redis应用问题
 
@@ -463,35 +463,35 @@
   + 申请锁setnx key1 10
   + 设置过期时间解决占了锁一直不释放的问题expire
   + 释放锁del key1
-  + 使用![image-20220226200911054](https://home.innky.xyz:25566/images/image-20220226200911054.png)同时上锁和设置ttl
+  + 使用![image-20220226200911054](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226200911054.png)同时上锁和设置ttl
 
 + 使用java代码实现
 
-  ![image-20220226201328111](https://home.innky.xyz:25566/images/image-20220226201328111.png)
+  ![image-20220226201328111](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226201328111.png)
 
 + 误删除别人的锁：
 
-  + 上锁的时候将uuid存入![image-20220226201740216](https://home.innky.xyz:25566/images/image-20220226201740216.png)
+  + 上锁的时候将uuid存入![image-20220226201740216](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226201740216.png)
   + 释放锁的时候检查是否uuid是否一样再删除
 
 + 删除的原子性：使用lua脚本实现
 
 ## Redis新功能
 
-+ acl![image-20220226203009667](https://home.innky.xyz:25566/images/image-20220226203009667.png)
++ acl![image-20220226203009667](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226203009667.png)
   + acl list展现用户权限列表
   + acl cat
   + acl setuser <username>
   + acl whoami
   + ......
 + IO多线程
-  + 默认不开启![image-20220226203052516](https://home.innky.xyz:25566/images/image-20220226203052516.png)
+  + 默认不开启![image-20220226203052516](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220226203052516.png)
 + 工具支持cluster(集群)
 
 ## 应用
 
 + 对象缓存的两种方式
 
-  ![image-20220326160752375](https://home.innky.xyz:25566/images/image-20220326160752375.png)
+  ![image-20220326160752375](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220326160752375.png)
 
 + 

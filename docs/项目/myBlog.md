@@ -2,7 +2,7 @@
 
 ## [VO、DTO、DO、PO的概念、区别和用处](https://blog.csdn.net/zjrbiancheng/article/details/6253232)
 
-![](https://home.innky.xyz:25566/images/202203132049029.png)
+![](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/202203132049029.png)
 
 + pojo：纯的java对象，不包含业务逻辑，不实现接口
 + do与dto
@@ -19,16 +19,16 @@
     + 有PO没有对应的DO如某些多对多的关联表，可能没有实际的意义，则其有PO而无DO
       + 不是所有的多对多都无实际意义，比如两者的联系影响到业务
   + 操作
-    + ![](https://home.innky.xyz:25566/images/202203132119217.png)
+    + ![](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/202203132119217.png)
 
 ## 使用
 
 + 方法一BeanUtils.copyProperties(admin,adminDTO)
 + 方法二
-  + ![image-20220331153514869](https://home.innky.xyz:25566/images/image-20220331153514869.png)
+  + ![image-20220331153514869](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220331153514869.png)
   + 定义映射
   +  
-    + ![image-20220331153659742](https://home.innky.xyz:25566/images/image-20220331153659742.png)
+    + ![image-20220331153659742](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220331153659742.png)
 
 ## vue渲染Md页面
 

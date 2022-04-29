@@ -36,7 +36,7 @@ or
 
 + MVVM的优点
 
-![image-20220119095659990](https://home.innky.xyz:25566/images/image-20220119095659990.png)
+![image-20220119095659990](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220119095659990.png)
 
 + 以下为通过v-bind指令，将span标签的title属性，与vue实例的message属性，进行绑定
 
@@ -122,11 +122,11 @@ var app5 = new Vue({
 
 + 单选框对象的绑定
 
-![image-20220119101434406](https://home.innky.xyz:25566/images/image-20220119101434406.png)
+![image-20220119101434406](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220119101434406.png)
 
 + 下拉框对象的绑定
 
-![image-20220119101630141](https://home.innky.xyz:25566/images/image-20220119101630141.png)
+![image-20220119101630141](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220119101630141.png)
 
 ## 组件
 
@@ -153,7 +153,7 @@ Vue.component('todo-item', {
 
 
 
-![image-20220119102139544](https://home.innky.xyz:25566/images/image-20220119102139544.png)
+![image-20220119102139544](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220119102139544.png)
 
 ## 异步通信
 
@@ -186,26 +186,26 @@ Vue.component('todo-item', {
 + js知识点：箭头函数并没有 `this`
 + 解决加载闪烁问题
 
-<img src="https://home.innky.xyz:25566/images/image-20220119103423852.png" alt="image-20220119103423852" style="zoom:33%;" />
+<img src="https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220119103423852.png" alt="image-20220119103423852" style="zoom:33%;" />
 
 ## 计算属性
 
 + 将计算结果缓存在**属性**中，但一旦其中的参数变化也会刷新
 + **计算属性**定义：在构造函数computed下定义
 
-![image-20220119110317621](https://home.innky.xyz:25566/images/image-20220119110317621.png)
+![image-20220119110317621](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220119110317621.png)
 
 ## 内容分发
 
 slot（插槽）
 
-![image-20220119110836707](https://home.innky.xyz:25566/images/image-20220119110836707.png)
+![image-20220119110836707](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220119110836707.png)
 
-![image-20220119111319851](https://home.innky.xyz:25566/images/image-20220119111319851.png)
+![image-20220119111319851](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220119111319851.png)
 
 获取循环中的index 
 
-![image-20220119111429864](https://home.innky.xyz:25566/images/image-20220119111429864.png)
+![image-20220119111429864](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220119111429864.png)
 
 ## Vue-cli
 
@@ -227,15 +227,15 @@ slot（插槽）
 
 + 暴露一个方法
 
-  ![image-20220119213237072](https://home.innky.xyz:25566/images/image-20220119213237072.png)
+  ![image-20220119213237072](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220119213237072.png)
 
 +  引入并调用方法
 
-  ![image-20220119213348512](https://home.innky.xyz:25566/images/image-20220119213348512.png)
+  ![image-20220119213348512](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220119213348512.png)
 
 + 打包模块配置文件
 
-  ![image-20220119213538231](https://home.innky.xyz:25566/images/image-20220119213538231.png)
+  ![image-20220119213538231](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220119213538231.png)
 
 + 打包将整个项目编译成一个js，使用只需引入一个js即可
 

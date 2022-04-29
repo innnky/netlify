@@ -2,33 +2,33 @@
 
 + 圆角
 
-  <img src="https://home.innky.xyz:25566/images/image-20220211205150586.png" alt="image-20220211205150586" style="zoom:50%;" />
+  <img src="https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220211205150586.png" alt="image-20220211205150586" style="zoom:50%;" />
 
-  <img src="https://home.innky.xyz:25566/images/image-20220211205211950.png" alt="image-20220211205211950" style="zoom:50%;" />
+  <img src="https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220211205211950.png" alt="image-20220211205211950" style="zoom:50%;" />
 
-  ![image-20220211205257351](https://home.innky.xyz:25566/images/image-20220211205257351.png)
+  ![image-20220211205257351](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220211205257351.png)
 
 + 回到原点
 
-  ![image-20220211205644475](https://home.innky.xyz:25566/images/image-20220211205644475.png)
+  ![image-20220211205644475](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220211205644475.png)
 
 + 辅助线
 
-  ![image-20220211205821769](https://home.innky.xyz:25566/images/image-20220211205821769.png)
+  ![image-20220211205821769](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220211205821769.png)
 
 + 单键快捷键
 
-  ![image-20220211205915876](https://home.innky.xyz:25566/images/image-20220211205915876.png)
+  ![image-20220211205915876](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220211205915876.png)
 
 + 填充乱序假文
 
-  ![image-20220211210538467](https://home.innky.xyz:25566/images/image-20220211210538467.png)
+  ![image-20220211210538467](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220211210538467.png)
 
 + 小闪电代表有事件
 
 + 标记原件
 
-  ![image-20220211211552714](https://home.innky.xyz:25566/images/image-20220211211552714.png)
+  ![image-20220211211552714](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220211211552714.png)
 
 + 显示隐藏有很多效果
 
@@ -45,4 +45,4 @@
 
   + 设置元素单机选中-》设置选中样式-》复制多份-》设置为选项组
 
-  ![image-20220215105224936](https://home.innky.xyz:25566/images/image-20220215105224936.png)
+  ![image-20220215105224936](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220215105224936.png)

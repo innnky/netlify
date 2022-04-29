@@ -40,25 +40,25 @@
 
   + viewport：视口不包含右侧滚动条
 
-    ![image-20220209111538971](https://home.innky.xyz:25566/images/image-20220209111538971.png)
+    ![image-20220209111538971](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220209111538971.png)
 
   + brakepoint
 
-    ![image-20220209111631354](https://home.innky.xyz:25566/images/image-20220209111631354.png)
+    ![image-20220209111631354](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220209111631354.png)
 
 + container：
 
-  ![image-20220209113032318](https://home.innky.xyz:25566/images/image-20220209113032318.png)
+  ![image-20220209113032318](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220209113032318.png)
 
   + 注：fluid是永远100%
 
 + holder
 
-  + 先引入，之后![image-20220209114454989](https://home.innky.xyz:25566/images/image-20220209114454989.png)
+  + 先引入，之后![image-20220209114454989](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220209114454989.png)
 
   + 常用功能
 
-    ![image-20220209114559455](https://home.innky.xyz:25566/images/image-20220209114559455.png)
+    ![image-20220209114559455](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220209114559455.png)
 
 + 栅格系统
 
@@ -83,7 +83,7 @@
   
     + 理解：当指定了行列数后会自动计算默认宽度以及自动宽度，之后如果自行指定了覆盖范围更小的则在其作用域上覆盖
   
-      ![image-20220209154709210](https://home.innky.xyz:25566/images/image-20220209154709210.png)
+      ![image-20220209154709210](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220209154709210.png)
   
       ```html
       <div class="container">

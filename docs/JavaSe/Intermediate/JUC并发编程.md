@@ -29,7 +29,7 @@ public enum State {
 + 用户线程与守护线程
   + 用户线程：自定义线程
   + 守护线程：运行在后台，如垃圾回收
-    + ![image-20220422102323181](https://home.innky.xyz:25566/images/image-20220422102323181.png)是否为守护线程；.setDaemon(true)
+    + ![image-20220422102323181](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220422102323181.png)是否为守护线程；.setDaemon(true)
     + 当没有用户线程只剩守护线程则jvm结束
 
 ## Lock接口
@@ -38,27 +38,27 @@ public enum State {
 
 + 多线程编程步骤
 
-   ![image-20220422110250099](https://home.innky.xyz:25566/images/image-20220422110250099.png)
+   ![image-20220422110250099](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220422110250099.png)
 
 + 创建线程的多种方式
 
-  ![image-20220422103221244](https://home.innky.xyz:25566/images/image-20220422103221244.png) 
+  ![image-20220422103221244](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220422103221244.png) 
 
 + lock接口
 
   + 为接口，有诸多实现类
 
-    ![image-20220422103525154](https://home.innky.xyz:25566/images/image-20220422103525154.png)
+    ![image-20220422103525154](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220422103525154.png)
 
   + 可重入锁ReentrantLock
 
-    + 创建![image-20220422103800476](https://home.innky.xyz:25566/images/image-20220422103800476.png)
+    + 创建![image-20220422103800476](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220422103800476.png)
     + 上锁lock.lock();
     + 临界操作放在try中
     + 解锁lock.unlock();
     + 解锁放在finally代码块中
 
-  + 区别![image-20220422104206323](https://home.innky.xyz:25566/images/image-20220422104206323.png)
+  + 区别![image-20220422104206323](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220422104206323.png)
 
   + 竞争资源激烈时Lock接口比synchronized高效
 
@@ -70,23 +70,23 @@ public enum State {
     + this.wait()以this对象为锁,中断调用线程转入this对象的等待队列(会释放锁)
     + this.notifyAll()将this对象所有正在等待队列的线程释放
   + wait方法应该写在while循环中,否则会有虚假唤醒
-    + ![image-20220422105943724](https://home.innky.xyz:25566/images/image-20220422105943724.png) 
+    + ![image-20220422105943724](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220422105943724.png) 
 
 + 使用Lock接口实现通讯
 
-  + ![image-20220422110514422](https://home.innky.xyz:25566/images/image-20220422110514422.png)
-  + 方法体![image-20220422110557955](https://home.innky.xyz:25566/images/image-20220422110557955.png)
+  + ![image-20220422110514422](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220422110514422.png)
+  + 方法体![image-20220422110557955](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220422110557955.png)
   + 区别
     + wait换成await()
     + notifyAll()换成signalAll()
 
-+ 线程定制化通讯:使用标志位![image-20220422111056267](https://home.innky.xyz:25566/images/image-20220422111056267.png)
++ 线程定制化通讯:使用标志位![image-20220422111056267](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220422111056267.png)
 
    + 关键代码
 
       while(flag ==1 ){
 
-       ![image-20220422155016624](https://home.innky.xyz:25566/images/image-20220422155016624.png)
+       ![image-20220422155016624](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220422155016624.png)
 
    + 据弹幕所言,似乎有flag的情况是不需要多个condition的 存疑
 
@@ -100,41 +100,41 @@ public enum State {
 
   + 使用Vector
 
-  + Collections![image-20220422160145382](https://home.innky.xyz:25566/images/image-20220422160145382.png)
+  + Collections![image-20220422160145382](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220422160145382.png)
 
-  + CopyOnWriteArrayList![image-20220422160256288](https://home.innky.xyz:25566/images/image-20220422160256288.png)
+  + CopyOnWriteArrayList![image-20220422160256288](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220422160256288.png)
 
     + 原理:写时复制
 
-      ![image-20220422160429232](https://home.innky.xyz:25566/images/image-20220422160429232.png)
+      ![image-20220422160429232](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220422160429232.png)
 
     + 与Vector区别: **写互斥,但写时仍可以读,Vector读写也互斥**
 
 + Set
 
-  + 使用![image-20220422161330112](https://home.innky.xyz:25566/images/image-20220422161330112.png)
+  + 使用![image-20220422161330112](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220422161330112.png)
 
 + Map
 
-  + 使用![image-20220422161516635](https://home.innky.xyz:25566/images/image-20220422161516635.png)
+  + 使用![image-20220422161516635](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220422161516635.png)
 
 ## 多线程锁
 
 + 公平锁和非公平锁
 
-  + ![image-20220422162246155](https://home.innky.xyz:25566/images/image-20220422162246155.png)
+  + ![image-20220422162246155](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220422162246155.png)
   + 默认是非公平锁false:效率高,可能出现饿死现象(饥饿)
   + 公平锁效率低
 
-+ 可冲入锁(递归锁)![image-20220422162535745](https://home.innky.xyz:25566/images/image-20220422162535745.png)
++ 可冲入锁(递归锁)![image-20220422162535745](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220422162535745.png)
 
-  + ![image-20220422162906375](https://home.innky.xyz:25566/images/image-20220422162906375.png)
+  + ![image-20220422162906375](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220422162906375.png)
   + 即在持有锁的时候可以大开使用同一把锁的任意其他地方
   + lock方式实现时候同一把锁**也需要释放多次**(并不是说释放一次就行)
 
 + 死锁检测
 
-  ![image-20220422163907717](https://home.innky.xyz:25566/images/image-20220422163907717.png)
+  ![image-20220422163907717](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220422163907717.png)
 
   +  jps -l 
   + jstack pid
@@ -161,18 +161,18 @@ public interface Callable<V> {
 
 + 与Runable区别
 
-  ![image-20220422164222647](https://home.innky.xyz:25566/images/image-20220422164222647.png)
+  ![image-20220422164222647](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220422164222647.png)
 
 + 使用:适配器模式FutureTask
 
   + 持有Callable接口,实现Runnable
 
-+ 举例![image-20220422165148227](https://home.innky.xyz:25566/images/image-20220422165148227.png)
++ 举例![image-20220422165148227](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220422165148227.png)
 
 + 案例
 
   + 通过futureTask.get()获取返回值
-  + <img src="https://home.innky.xyz:25566/images/image-20220422165358941.png" alt="image-20220422165358941" style="zoom:50%;" />
+  + <img src="https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220422165358941.png" alt="image-20220422165358941" style="zoom:50%;" />
   + 通过isDone获取完成状态![image-20220422165502780](/Users/xingyijin/Library/Application%20Support/typora-user-images/image-20220422165502780.png)
   + get多次只会执行一次计算(未来任务完成后会将结果保存)
 
@@ -196,9 +196,9 @@ public interface Callable<V> {
 
   + 举例:集齐7颗龙珠就可以召唤神龙
 
-  + ![image-20220422191354430](https://home.innky.xyz:25566/images/image-20220422191354430.png)
+  + ![image-20220422191354430](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220422191354430.png)
 
-     ![image-20220422191411571](https://home.innky.xyz:25566/images/image-20220422191411571.png)
+     ![image-20220422191411571](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220422191411571.png)
 
   + 等待线程到达阈值执行方法
 
@@ -216,32 +216,32 @@ public interface Callable<V> {
 
 + 案例
 
-  + ![image-20220422194557708](https://home.innky.xyz:25566/images/image-20220422194557708.png)
+  + ![image-20220422194557708](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220422194557708.png)
   + 休眠时间            TimeUnit.MINUTES.sleep(0);
 
 + ReentrantReadWriteLock读写锁
 
-  + 创建![image-20220422195931235](https://home.innky.xyz:25566/images/image-20220422195931235.png) 
+  + 创建![image-20220422195931235](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220422195931235.png) 
 
-  ![image-20220422195225447](https://home.innky.xyz:25566/images/image-20220422195225447.png)
+  ![image-20220422195225447](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220422195225447.png)
 
   + 写锁创建 rwLock.writeLock().lock()
 
-  + 释放![image-20220422195355135](https://home.innky.xyz:25566/images/image-20220422195355135.png)
+  + 释放![image-20220422195355135](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220422195355135.png)
 
   + 读写锁缺陷
 
-     ![image-20220422200941937](https://home.innky.xyz:25566/images/image-20220422200941937.png)
+     ![image-20220422200941937](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220422200941937.png)
 
   + 锁降级
 
-    + ![image-20220422201745877](https://home.innky.xyz:25566/images/image-20220422201745877.png)
+    + ![image-20220422201745877](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220422201745877.png)
     + (写锁降级成写锁后可以让别人进来)
     + 获取写锁后同一个线程可以继续去获取读锁
 
 ## 阻塞队列
 
-+ ![image-20220423075606824](https://home.innky.xyz:25566/images/image-20220423075606824.png)
++ ![image-20220423075606824](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220423075606824.png)
 
   ```
   当队列是空的，从队列中获取元素的操作将会被阻塞。
@@ -255,7 +255,7 @@ public interface Callable<V> {
 
   + 实现类ArrayBlockinqQueue基于定长数组, DelayQueue, LinkedBlockinqDeque, LinkedBlockingQueue, PriorityBlockingQueue,
     SynchronousQueue
-  + 方法![image-20220423080315870](https://home.innky.xyz:25566/images/image-20220423080315870.png)
+  + 方法![image-20220423080315870](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220423080315870.png)
 
 ## 线程池
 
@@ -271,7 +271,7 @@ public interface Callable<V> {
   ExecutorService, ThreadPoolExecutor这几个类
   ```
 
-+ ![image-20220423081136585](https://home.innky.xyz:25566/images/image-20220423081136585.png)
++ ![image-20220423081136585](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220423081136585.png)
 
 + 分类
 
@@ -284,9 +284,9 @@ public interface Callable<V> {
 
 + 原理
 
-  +  ThreadPoolExecutor 构造参数![image-20220423082942838](https://home.innky.xyz:25566/images/image-20220423082942838.png)
+  +  ThreadPoolExecutor 构造参数![image-20220423082942838](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220423082942838.png)
 
-  + 执行流程![image-20220423083332794](https://home.innky.xyz:25566/images/image-20220423083332794.png)
+  + 执行流程![image-20220423083332794](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220423083332794.png)
 
   + 内置拒绝策略
 
@@ -307,19 +307,19 @@ public interface Callable<V> {
     允许的创建线程数量为 Integer.MAX_VALSE，可能会创建大量的线程，从而导致 OOM。
     ```
 
-  + 自定义创建连接池![image-20220423084020964](https://home.innky.xyz:25566/images/image-20220423084020964.png)
+  + 自定义创建连接池![image-20220423084020964](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220423084020964.png)
 
 ## Fork/join
 
-+ ![image-20220423085445296](https://home.innky.xyz:25566/images/image-20220423085445296.png)
-+ ![image-20220423085511525](https://home.innky.xyz:25566/images/image-20220423085511525.png)
-+ ![image-20220423085532119](https://home.innky.xyz:25566/images/image-20220423085532119.png)
-+ ![image-20220423085642865](https://home.innky.xyz:25566/images/image-20220423085642865.png)
++ ![image-20220423085445296](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220423085445296.png)
++ ![image-20220423085511525](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220423085511525.png)
++ ![image-20220423085532119](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220423085532119.png)
++ ![image-20220423085642865](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220423085642865.png)
 
 ## 异步回调
 
-+ ![image-20220423085819658](https://home.innky.xyz:25566/images/image-20220423085819658.png)
-+ ![image-20220423085927373](https://home.innky.xyz:25566/images/image-20220423085927373.png)
-+ ![image-20220423090041407](https://home.innky.xyz:25566/images/image-20220423090041407.png)
++ ![image-20220423085819658](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220423085819658.png)
++ ![image-20220423085927373](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220423085927373.png)
++ ![image-20220423090041407](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220423090041407.png)
 + 
 

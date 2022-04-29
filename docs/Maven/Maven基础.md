@@ -40,7 +40,7 @@
 
 + 约定的目录结构
 
-  ![image-20220127101808534](https://home.innky.xyz:25566/images/image-20220127101808534.png)
+  ![image-20220127101808534](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220127101808534.png)
 
   + mvn -compile: 编译src/main中所有java文件
     + 项目根目录编译后生成target目录
@@ -83,19 +83,19 @@
 + 单元测试junit
 
   + 添加maven依赖
-  + ![image-20220127110633517](https://home.innky.xyz:25566/images/image-20220127110633517.png)
+  + ![image-20220127110633517](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220127110633517.png)
   
 + 再IDEA中使用Maven
 
   + settings配置当前工程 other settings 为以后新建工程配置（new project setup）
 
-  + 添加该选项后不会自动下载模板![image-20220127155218665](https://home.innky.xyz:25566/images/image-20220127155218665.png)
+  + 添加该选项后不会自动下载模板![image-20220127155218665](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220127155218665.png)
 
     -Darchtype.....
 
   + 使用模板创建项目
 
-    + 最普通的java项目模板![image-20220127155835130](https://home.innky.xyz:25566/images/image-20220127155835130.png)、
+    + 最普通的java项目模板![image-20220127155835130](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220127155835130.png)、
 
   + 右键目录-> Make directory as
   
@@ -113,6 +113,6 @@
 
 + maven资源插件
 
-  ![image-20220127195919966](https://home.innky.xyz:25566/images/image-20220127195919966.png)
+  ![image-20220127195919966](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220127195919966.png)
 
   

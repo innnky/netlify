@@ -4,15 +4,15 @@
 
 + 安装cnpm
 
-  ![image-20220212155043036](https://home.innky.xyz:25566/images/image-20220212155043036.png)
+  ![image-20220212155043036](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220212155043036.png)
 
 + 安装yarn
 
-  ![image-20220212155115432](https://home.innky.xyz:25566/images/image-20220212155115432.png)
+  ![image-20220212155115432](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220212155115432.png)
 
 + 安装vue-cli
 
-  ![image-20220212155140314](https://home.innky.xyz:25566/images/image-20220212155140314.png)
+  ![image-20220212155140314](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220212155140314.png)
 
   + vue -V 测试是否安装成功
 
@@ -27,50 +27,50 @@
 
   + npm方式
 
-    + 安装![image-20220212160041306](https://home.innky.xyz:25566/images/image-20220212160041306.png)
+    + 安装![image-20220212160041306](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220212160041306.png)
 
     + 全局引入
 
-      ![image-20220212160143587](https://home.innky.xyz:25566/images/image-20220212160143587.png)
+      ![image-20220212160143587](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220212160143587.png)
 
     + 按需引入
 
-      + （可选）![image-20220212160435009](https://home.innky.xyz:25566/images/image-20220212160435009.png)
-      + 引入![image-20220212160642148](https://home.innky.xyz:25566/images/image-20220212160642148.png)
-      + 配置babel.config.js![image-20220212160550423](https://home.innky.xyz:25566/images/image-20220212160550423.png)
+      + （可选）![image-20220212160435009](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220212160435009.png)
+      + 引入![image-20220212160642148](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220212160642148.png)
+      + 配置babel.config.js![image-20220212160550423](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220212160550423.png)
 
   + 基础使用
 
     + 按钮添加点击事件
 
-      ![image-20220212155823456](https://home.innky.xyz:25566/images/image-20220212155823456.png)
+      ![image-20220212155823456](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220212155823456.png)
 
-      ![image-20220212155925933](https://home.innky.xyz:25566/images/image-20220212155925933.png)
+      ![image-20220212155925933](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220212155925933.png)
 
     + 弹出框绑定vue属性
 
-      ![image-20220212160001462](https://home.innky.xyz:25566/images/image-20220212160001462.png)
+      ![image-20220212160001462](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220212160001462.png)
 
-+ vuerouter安装![image-20220212160825452](https://home.innky.xyz:25566/images/image-20220212160825452.png)
++ vuerouter安装![image-20220212160825452](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220212160825452.png)
 
   + 引入![image-20220212160919874](C:/JavaLearning/%E5%89%8D%E7%AB%AF/%E6%A1%86%E6%9E%B6/image-20220212160919874.png)
 
   + 创建/router/index.js
 
-    ![image-20220212161222150](https://home.innky.xyz:25566/images/image-20220212161222150.png)
+    ![image-20220212161222150](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220212161222150.png)
 
   + 使用按钮切换路由
 
-    ![image-20220212161417488](https://home.innky.xyz:25566/images/image-20220212161417488.png)
+    ![image-20220212161417488](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220212161417488.png)
 
 + 安装less
 
-  + ![image-20220212161743553](https://home.innky.xyz:25566/images/image-20220212161743553.png)
-  + ![image-20220212161753325](https://home.innky.xyz:25566/images/image-20220212161753325.png)
+  + ![image-20220212161743553](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220212161743553.png)
+  + ![image-20220212161753325](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220212161753325.png)
 
 ## 网页搭建
 
-+ 整体布局![image-20220212161653805](https://home.innky.xyz:25566/images/image-20220212161653805.png)
++ 整体布局![image-20220212161653805](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220212161653805.png)
 
 + 使用v-for 最好指定:key 可以提升渲染性能
 
@@ -132,7 +132,7 @@
 
 + 在main.js中引入样式文件
 
-  ![image-20220212211554175](https://home.innky.xyz:25566/images/image-20220212211554175.png)
+  ![image-20220212211554175](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220212211554175.png)
 
 + 使用图片
 

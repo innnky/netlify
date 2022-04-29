@@ -5,13 +5,13 @@
 
 ## 引入
 
-+ ![image-20220204160742894](https://home.innky.xyz:25566/images/image-20220204160742894.png)
++ ![image-20220204160742894](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220204160742894.png)
 
 + 添加依赖SpringMVC servlet jsp
 
 + 在web.xml中注册DispatcherServlet
 
-  ![image-20220131214732385](https://home.innky.xyz:25566/images/image-20220131214732385.png)
+  ![image-20220131214732385](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220131214732385.png)
 
   +  默认是第一次访问Servlet时创建对象，使用load-on-startup在启动时创建
 
@@ -21,11 +21,11 @@
 
     + 使用<init-param>手动指定配置文件位置
 
-      ![image-20220131215235002](https://home.innky.xyz:25566/images/image-20220131215235002.png)
+      ![image-20220131215235002](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220131215235002.png)
 
   + 配置mapping
 
-    ![image-20220131215529057](https://home.innky.xyz:25566/images/image-20220131215529057.png)
+    ![image-20220131215529057](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220131215529057.png)
 
     
 
@@ -41,7 +41,7 @@
     
     + 可以指定多个value
     
-      ![image-20220204084624035](https://home.innky.xyz:25566/images/image-20220204084624035.png)
+      ![image-20220204084624035](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220204084624035.png)
   + 方法返回值ModelAndView
     + addObject(key,value)
     + setView("res.jsp")
@@ -60,13 +60,13 @@
 
 + 用户访问控制：将页面文件放到WEB-INF目录下
 
-  ![image-20220204084224443](https://home.innky.xyz:25566/images/image-20220204084224443.png)
+  ![image-20220204084224443](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220204084224443.png)
 
 + 视图解析器
 
   + 配置：在spring配置文件添加bean
 
-    ![image-20220204084454685](https://home.innky.xyz:25566/images/image-20220204084454685.png)
+    ![image-20220204084454685](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220204084454685.png)
 
   + 可以省略前后缀
 
@@ -92,7 +92,7 @@
   
     + 逐个接收
   
-      ![image-20220204142450177](https://home.innky.xyz:25566/images/image-20220204142450177.png)
+      ![image-20220204142450177](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220204142450177.png)
   
       + 框架会自动进行类型转换，拿到参数后可以直接使用（但可能会转换失败）
     
@@ -106,9 +106,9 @@
     
         + 在web.xml中配置
     
-          ![image-20220204155504305](https://home.innky.xyz:25566/images/image-20220204155504305.png)
+          ![image-20220204155504305](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220204155504305.png)
     
-          ![image-20220204155528573](https://home.innky.xyz:25566/images/image-20220204155528573.png)
+          ![image-20220204155528573](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220204155528573.png)
     
     + 对象接收：一次接收多个参数
     
@@ -135,22 +135,22 @@
   + 实现步骤
 
     + 添加依赖，默认使用jackson
-    + 配置文件中加入`<mvc:annotation-driven>`注解![image-20220204204307899](https://home.innky.xyz:25566/images/image-20220204204307899.png)添加注解时候需要注意加的是哪个域下的![image-20220204204724749](https://home.innky.xyz:25566/images/image-20220204204724749.png)
+    + 配置文件中加入`<mvc:annotation-driven>`注解![image-20220204204307899](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220204204307899.png)添加注解时候需要注意加的是哪个域下的![image-20220204204724749](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220204204724749.png)
     + 需要添加@ResponseBody注解
 
   + 框架的处理流程
 
-    ![image-20220204205348252](https://home.innky.xyz:25566/images/image-20220204205348252.png)
+    ![image-20220204205348252](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220204205348252.png)
 
   + 多个数据可以直接返回List，会自动转换成json数组
 
   + 有@ResponseBody时，返回String返回的是数据而不是视图
 
-    + 默认会有乱码，需要加入，此处之前设置的filter不生效（@ResponseBody不走过滤器）![image-20220204210413587](https://home.innky.xyz:25566/images/image-20220204210413587.png)
+    + 默认会有乱码，需要加入，此处之前设置的filter不生效（@ResponseBody不走过滤器）![image-20220204210413587](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220204210413587.png)
 
 ### 中央调度器url-pattern"/"
 
-+ Tomcat默认会自动处理静态资源![image-20220204211315782](https://home.innky.xyz:25566/images/image-20220204211315782.png)
++ Tomcat默认会自动处理静态资源![image-20220204211315782](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220204211315782.png)
 
 + jsp会自动转换为已映射的servlet
 
@@ -160,48 +160,48 @@
 
 + 解决办法：
 
-  1. 方法一：在Spring配置文件中添加![image-20220204212209345](https://home.innky.xyz:25566/images/image-20220204212209345.png)![image-20220204212500852](https://home.innky.xyz:25566/images/image-20220204212500852.png)
+  1. 方法一：在Spring配置文件中添加![image-20220204212209345](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220204212209345.png)![image-20220204212500852](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220204212500852.png)
 
      创建了一个controller将请求转发给tomcat默认servlet
 
   2. 方法二：
 
-     ![image-20220204213541360](https://home.innky.xyz:25566/images/image-20220204213541360.png)
+     ![image-20220204213541360](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220204213541360.png)
 
      **表示当前目录以及子目录下的所有文件
 
      也需要加注解驱动
 
-     ![image-20220204213741282](https://home.innky.xyz:25566/images/image-20220204213741282.png)
+     ![image-20220204213741282](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220204213741282.png)
      
      + 可以将所有资源放到一个目录内
      
-       ![image-20220204214034000](https://home.innky.xyz:25566/images/image-20220204214034000.png)
+       ![image-20220204214034000](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220204214034000.png)
 
 ### 地址相关问题
 
-+ ![image-20220204214552196](https://home.innky.xyz:25566/images/image-20220204214552196.png)
++ ![image-20220204214552196](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220204214552196.png)
 
-  ![image-20220204214819119](https://home.innky.xyz:25566/images/image-20220204214819119.png)
+  ![image-20220204214819119](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220204214819119.png)
 
 + 使用不带/的地址时候可能会出下面问题
 
-  ![image-20220204215120981](https://home.innky.xyz:25566/images/image-20220204215120981.png)
+  ![image-20220204215120981](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220204215120981.png)
   
   + 解决方案
   
-    ![image-20220205161402280](https://home.innky.xyz:25566/images/image-20220205161402280.png)
+    ![image-20220205161402280](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220205161402280.png)
   
 
 ## SSM整合开发
 
 + 引入
 
-  ![image-20220205074704748](https://home.innky.xyz:25566/images/image-20220205074704748.png)
+  ![image-20220205074704748](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220205074704748.png)
 
 + 步骤
 
-  + 加依赖![image-20220205074755891](https://home.innky.xyz:25566/images/image-20220205074755891.png)
+  + 加依赖![image-20220205074755891](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220205074755891.png)
   + 配置web.xml
     + 注册DispatcherServlet
     + 注册Spring监听器
@@ -216,17 +216,17 @@
 
 + 区别
 
-  ![image-20220205162823163](https://home.innky.xyz:25566/images/image-20220205162823163.png)
+  ![image-20220205162823163](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220205162823163.png)
 
 + forward与redirect：忽略视图解析器，需要指定完整路径
 
-  ![image-20220205163200000](https://home.innky.xyz:25566/images/image-20220205163200000.png)
+  ![image-20220205163200000](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220205163200000.png)
 
-  ![image-20220205163605487](https://home.innky.xyz:25566/images/image-20220205163605487.png)
+  ![image-20220205163605487](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220205163605487.png)
 
 + 重定向参数传递p55
 
-  ![image-20220205163740596](https://home.innky.xyz:25566/images/image-20220205163740596.png)
+  ![image-20220205163740596](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220205163740596.png)
 
 ### 异常处理
 
@@ -242,7 +242,7 @@
 
     + 方法上方加入@ExceptionHandler
 
-      ![image-20220205165952382](https://home.innky.xyz:25566/images/image-20220205165952382.png)
+      ![image-20220205165952382](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220205165952382.png)
 
     + 处理异常逻辑
 
@@ -254,40 +254,40 @@
 
   + 配置Spring配置文件
 
-    ![image-20220205170534152](https://home.innky.xyz:25566/images/image-20220205170534152.png)
+    ![image-20220205170534152](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220205170534152.png)
 
 ### 拦截器
 
 + 引入
 
-  ![image-20220205213118443](https://home.innky.xyz:25566/images/image-20220205213118443.png)
+  ![image-20220205213118443](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220205213118443.png)
 
 + 使用
 
   + 定义类实现HandlerInterceptor接口
   + 在springmvc配置文件中声明，指定拦截的uri
 
-+ ![image-20220205213217481](https://home.innky.xyz:25566/images/image-20220205213217481.png)
++ ![image-20220205213217481](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220205213217481.png)
 
 + HandlerInterceptor接口
 
   + preHandle
 
-    ![image-20220205213616075](https://home.innky.xyz:25566/images/image-20220205213616075.png)
+    ![image-20220205213616075](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220205213616075.png)
 
-    ![image-20220205213641125](https://home.innky.xyz:25566/images/image-20220205213641125.png)
+    ![image-20220205213641125](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220205213641125.png)
 
   + postHandle
 
-    ![image-20220205213835052](https://home.innky.xyz:25566/images/image-20220205213835052.png)
+    ![image-20220205213835052](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220205213835052.png)
 
   + afterHandle
 
-    ![image-20220205213946554](https://home.innky.xyz:25566/images/image-20220205213946554.png)
+    ![image-20220205213946554](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220205213946554.png)
 
 + 声明拦截器：在springmvc.xml中
 
-  ![image-20220205214149972](https://home.innky.xyz:25566/images/image-20220205214149972.png)
+  ![image-20220205214149972](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220205214149972.png)
 
 + 多个拦截器
 
@@ -295,13 +295,13 @@
 
   + 多个调度器的执行顺序
 
-    ![image-20220205220226745](https://home.innky.xyz:25566/images/image-20220205220226745.png)
+    ![image-20220205220226745](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220205220226745.png)
 
-    ![image-20220205220045268](https://home.innky.xyz:25566/images/image-20220205220045268.png)
+    ![image-20220205220045268](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220205220045268.png)
 
 + 与过滤器的区别
 
-  + ![image-20220205220515236](https://home.innky.xyz:25566/images/image-20220205220515236.png)
+  + ![image-20220205220515236](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220205220515236.png)
   + 过滤器是Servlet中的对象（tomcat创建），拦截器是框架中的（Springmvc容器中）
   + 实现的接口不同
   + 过滤器是用来设置request, response的参数、属性的，侧重对数据的过滤，拦截器是用来验证请求的，能截断请求
@@ -310,11 +310,11 @@
 
 ## SpringMvc处理流程
 
-+ ![image-20220205221607367](https://home.innky.xyz:25566/images/image-20220205221607367.png)
++ ![image-20220205221607367](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220205221607367.png)
 
-+ ![image-20220205222133567](https://home.innky.xyz:25566/images/image-20220205222133567.png)
++ ![image-20220205222133567](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220205222133567.png)
 
-+ ![image-20220205222455322](https://home.innky.xyz:25566/images/image-20220205222455322.png)
++ ![image-20220205222455322](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220205222455322.png)
 
 + 
 

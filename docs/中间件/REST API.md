@@ -2,11 +2,11 @@
 
 全称
 
-![](https://home.innky.xyz:25566/images/202203160645902.png)
+![](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/202203160645902.png)
 
 各方法介绍
 
-![](https://home.innky.xyz:25566/images/202203160647538.png)
+![](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/202203160647538.png)
 
 + api接口文档
   + 瀑布模型

@@ -1,6 +1,6 @@
 ## SpringBoot 目录结构
 
-![image-20211221220724413](https://home.innky.xyz:25566/images/image-20211221220724413.png)
+![image-20211221220724413](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20211221220724413.png)
 
 其中.properties或.yaml二选一
 
@@ -15,23 +15,23 @@ server:
 
 ## 配置依赖包
 
-<img src="https://home.innky.xyz:25566/images/image-20211221221119877.png" alt="image-20211221221119877" style="zoom:67%;" />
+<img src="https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20211221221119877.png" alt="image-20211221221119877" style="zoom:67%;" />
 
-<img src="https://home.innky.xyz:25566/images/image-20211221221027516.png" alt="image-20211221221027516" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20211221221027516.png" alt="image-20211221221027516" style="zoom:50%;" />
 
 还有许多
 
 ## 连接数据库
 
-<img src="https://home.innky.xyz:25566/images/image-20211221221335845.png" alt="image-20211221221335845" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20211221221335845.png" alt="image-20211221221335845" style="zoom:50%;" />
 
-<img src="https://home.innky.xyz:25566/images/image-20211221221359189.png" alt="image-20211221221359189" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20211221221359189.png" alt="image-20211221221359189" style="zoom:50%;" />
 
-<img src="https://home.innky.xyz:25566/images/image-20211221221445555.png" alt="image-20211221221445555" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20211221221445555.png" alt="image-20211221221445555" style="zoom:50%;" />
 
 看版本选择是否加.cj
 
-<img src="https://home.innky.xyz:25566/images/image-20211221221529144.png" alt="image-20211221221529144" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20211221221529144.png" alt="image-20211221221529144" style="zoom:50%;" />
 
 
 
@@ -77,11 +77,11 @@ server:
 
   + 引用maven包中的`<link th:href="@{/webjars/bootstrap/4.5.0/css/bootstrap.css}" rel="stylesheet">`
 
-    <img src="https://home.innky.xyz:25566/images/image-20220103190321934.png" alt="image-20220103190321934" style="zoom:66%;" />
+    <img src="https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220103190321934.png" alt="image-20220103190321934" style="zoom:66%;" />
 
   + 引用静态文件`<link th:href="@{/asserts/css/signin.css}" rel="stylesheet">`
 
-    <img src="https://home.innky.xyz:25566/images/image-20220103190554135.png" alt="image-20220103190554135" style="zoom:67%;" />
+    <img src="https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220103190554135.png" alt="image-20220103190554135" style="zoom:67%;" />
 
   + 有时候静态资源加载不出来要点击Buiid->Rebuld Project
 

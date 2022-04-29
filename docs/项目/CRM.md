@@ -1,6 +1,6 @@
 # crm
 
-+ 技术架构![image-20220326171113389](https://home.innky.xyz:25566/images/image-20220326171113389.png)
++ 技术架构![image-20220326171113389](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220326171113389.png)
 + 软件企业组织结构
   + 研发部（程序员，美工，DBA），测试部，实施部门，产品部，市场部
 + 软件开发生命周期
@@ -38,7 +38,7 @@
     + 统计图标：管理层
   
 + 表结构
-  + ![image-20220328183343497](https://home.innky.xyz:25566/images/image-20220328183343497.png)
+  + ![image-20220328183343497](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220328183343497.png)
   
   + 主键
   
@@ -48,7 +48,7 @@
   
       + 自增：运行效率高
       + assigned：程序员手动制定
-        + ![image-20220329081824153](https://home.innky.xyz:25566/images/image-20220329081824153.png)
+        + ![image-20220329081824153](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220329081824153.png)
         + 还有一些其他算法，（弹幕说雪花算法）貌似可以和时间做关联
       + 共享主键：用一对一外键做主键（不常用）
       + 联合主键（不常用）
@@ -63,7 +63,7 @@
   
         + 若外键可以为空，则看情况
   
-          ![image-20220329084040466](https://home.innky.xyz:25566/images/image-20220329084040466.png)
+          ![image-20220329084040466](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220329084040466.png)
   
       + 一对一
   
@@ -97,10 +97,10 @@
 
 + 某些简单的一对多可以使用字符串存储，使用‘，’隔开，之后判断可以直接使用.contains()方法
 
-+ jq获取属性值![image-20220329164507587](https://home.innky.xyz:25566/images/image-20220329164507587.png)
++ jq获取属性值![image-20220329164507587](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220329164507587.png)
 
 + 地址栏跳转
 
-  ![image-20220329164814299](https://home.innky.xyz:25566/images/image-20220329164814299.png)
+  ![image-20220329164814299](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220329164814299.png)
 
 + 

@@ -2,7 +2,7 @@
 
 ## 目录结构
 
-![image-20220211151612451](https://home.innky.xyz:25566/images/image-20220211151612451.png)
+![image-20220211151612451](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220211151612451.png)
 
 + 局部注册
 
@@ -46,17 +46,17 @@
   + Vue.prototype.$http.defaults.baseURL = ''
   + this.$http.get() ......
 
-+ 子路由![image-20220211172414997](https://home.innky.xyz:25566/images/image-20220211172414997.png)
++ 子路由![image-20220211172414997](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220211172414997.png)
 
 + xxxx.log   -> console.log(xxxx)
 
 + 切换路由
 
-  ![image-20220211172859101](https://home.innky.xyz:25566/images/image-20220211172859101.png)
+  ![image-20220211172859101](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220211172859101.png)
 
 + 监听路由
 
-  ![image-20220211173009626](https://home.innky.xyz:25566/images/image-20220211173009626.png)
+  ![image-20220211173009626](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220211173009626.png)
 
 ## 部署
 

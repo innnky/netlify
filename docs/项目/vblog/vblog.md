@@ -5,7 +5,7 @@
   
 + nodejs似乎可以代理解决跨域问题
 
-+ 通过这个计算start![image-20220303145756701](https://home.innky.xyz:25566/images/image-20220303145756701.png)![image-20220303145850272](https://home.innky.xyz:25566/images/image-20220303145850272.png)
++ 通过这个计算start![image-20220303145756701](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220303145756701.png)![image-20220303145850272](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220303145850272.png)
 
 + 如文章对tag的1对多关系中tag可能为空，则连接需要使用左连接
 

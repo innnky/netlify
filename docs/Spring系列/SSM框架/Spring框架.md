@@ -11,7 +11,7 @@
 
 + 作用：实现不同功能时减少对代码的改动（解耦合）
 
-+ ![image-20220129095143297](https://home.innky.xyz:25566/images/image-20220129095143297.png)
++ ![image-20220129095143297](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220129095143297.png)
 
 + 技术实现：DI依赖注入
 
@@ -24,7 +24,7 @@
 
 + 添加依赖
 
-  ![image-20220129104906772](https://home.innky.xyz:25566/images/image-20220129104906772.png)
+  ![image-20220129104906772](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220129104906772.png)
 
 + 配置文件 applicationContext.xml
 
@@ -40,17 +40,17 @@
     + 创建容器ApplicationContext 使用其实现类ClassPathXmlApplicationContext("从类路径开始的spring配置文件路径")
     + 调用容器的getBean("beanid")获取bean
 
-  + 代码![image-20220129100514516](https://home.innky.xyz:25566/images/image-20220129100514516.png)
+  + 代码![image-20220129100514516](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220129100514516.png)
 
   + 创建时机:spring容器创建时会创建所有bean
 
   + 获取容器中所有的对象
 
-    ![image-20220129101126915](https://home.innky.xyz:25566/images/image-20220129101126915.png)
+    ![image-20220129101126915](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220129101126915.png)
 
   + spring创建对象默认调用的是无参构造方法
 
-+ ![image-20220129104626595](https://home.innky.xyz:25566/images/image-20220129104626595.png)
++ ![image-20220129104626595](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220129104626595.png)
 
 ### DI依赖注入
 
@@ -69,15 +69,15 @@
 
 + set设值注入
 
-  + 简单类型![image-20220129102109573](https://home.innky.xyz:25566/images/image-20220129102109573.png)
+  + 简单类型![image-20220129102109573](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220129102109573.png)
 
   + 引用类型
 
-    ![image-20220129103428881](https://home.innky.xyz:25566/images/image-20220129103428881.png)
+    ![image-20220129103428881](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220129103428881.png)
 
 + 构造注入(了解)
 
-  ![image-20220129103834785](https://home.innky.xyz:25566/images/image-20220129103834785.png)
+  ![image-20220129103834785](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220129103834785.png)
 
   + 构造注入若是按序传参则可以省略index
 
@@ -92,11 +92,11 @@
 
   + 按名称注入（byName）
 
-    ![image-20220129132239490](https://home.innky.xyz:25566/images/image-20220129132239490.png)
+    ![image-20220129132239490](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220129132239490.png)
 
   + 按类型注入
 
-    ![image-20220129132623293](https://home.innky.xyz:25566/images/image-20220129132623293.png)
+    ![image-20220129132623293](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220129132623293.png)
 
     + 如果匹配多个会直接报错
 
@@ -111,11 +111,11 @@
 
     + 单独指定
 
-      ![image-20220129134948425](https://home.innky.xyz:25566/images/image-20220129134948425.png)
+      ![image-20220129134948425](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220129134948425.png)
 
     + 使用通配符
 
-      ![image-20220129135204040](https://home.innky.xyz:25566/images/image-20220129135204040.png)
+      ![image-20220129135204040](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220129135204040.png)
 
       + 必须在某一级目录下
       + 不能包含自己
@@ -130,7 +130,7 @@
 
   + 配置文件中扫描
 
-    ![image-20220129140123412](https://home.innky.xyz:25566/images/image-20220129140123412.png)
+    ![image-20220129140123412](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220129140123412.png)
 
 + 注解
 
@@ -140,7 +140,7 @@
     + 甚至可以不指定value 省略()
       + 默认首字母小写
     
-  + ![image-20220129141114169](https://home.innky.xyz:25566/images/image-20220129141114169.png)
+  + ![image-20220129141114169](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220129141114169.png)
     + 用法和Component一样，但有不同的功能
     + 用来给项目对象分层
     
@@ -151,11 +151,11 @@
   
   + @Autowired()
   
-    + byType方式（默认）![image-20220129200117899](https://home.innky.xyz:25566/images/image-20220129200117899.png)
+    + byType方式（默认）![image-20220129200117899](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220129200117899.png)
   
     + byName方式
   
-      ![image-20220129195950142](https://home.innky.xyz:25566/images/image-20220129195950142.png)
+      ![image-20220129195950142](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220129195950142.png)
   
   + @Resource：来自jdk，Spring提供支持，为引用赋值
   
@@ -178,8 +178,8 @@
 
 + 属性配置文件
 
-  + ![image-20220129201107308](https://home.innky.xyz:25566/images/image-20220129201107308.png)
-  + ![image-20220129201126457](https://home.innky.xyz:25566/images/image-20220129201126457.png)
+  + ![image-20220129201107308](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220129201107308.png)
+  + ![image-20220129201126457](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220129201126457.png)
   + myage是test.propertieis中的key
 
 + IOC解耦合：实现业务对象之间的解耦合例如service和dao对象的解耦合
@@ -198,7 +198,7 @@
 
 + 如何理解面向切面编程
 
-  ![image-20220129204328548](https://home.innky.xyz:25566/images/image-20220129204328548.png)
+  ![image-20220129204328548](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220129204328548.png)
 
 + 术语
 
@@ -206,7 +206,7 @@
   + PointCut：切入点，多个连接点方法的集合
   + Advice：通知。切面功能执行的时间
 
-+ ![image-20220129204948689](https://home.innky.xyz:25566/images/image-20220129204948689.png)
++ ![image-20220129204948689](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220129204948689.png)
 
 + 技术实现
 
@@ -217,31 +217,31 @@
 
 + AOP作用
 
-  ![image-20220130083138683](https://home.innky.xyz:25566/images/image-20220130083138683.png)
+  ![image-20220130083138683](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130083138683.png)
 
 + 什么时候用
 
-  ![image-20220130083444103](https://home.innky.xyz:25566/images/image-20220130083444103.png)
+  ![image-20220130083444103](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130083444103.png)
 
   
 
 ### aspectj
 
-+ ![image-20220129205324224](https://home.innky.xyz:25566/images/image-20220129205324224.png)
++ ![image-20220129205324224](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220129205324224.png)
 
 + 切入点表达式
 
-  ![image-20220129205608456](https://home.innky.xyz:25566/images/image-20220129205608456.png)
+  ![image-20220129205608456](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220129205608456.png)
 
   + 使用
 
-    <img src="https://home.innky.xyz:25566/images/image-20220129210122611.png" alt="image-20220129210122611" style="zoom:50%;" />
+    <img src="https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220129210122611.png" alt="image-20220129210122611" style="zoom:50%;" />
 
   + 举例
 
-    <img src="https://home.innky.xyz:25566/images/image-20220129210206837.png" alt="image-20220129210206837" style="zoom:50%;" />
+    <img src="https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220129210206837.png" alt="image-20220129210206837" style="zoom:50%;" />
 
-    <img src="https://home.innky.xyz:25566/images/image-20220129210230033.png" alt="image-20220129210230033" style="zoom:50%;" />
+    <img src="https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220129210230033.png" alt="image-20220129210230033" style="zoom:50%;" />
 
 + 实现步骤p52
 
@@ -262,7 +262,7 @@
 
   + 定义方法
 
-    ![image-20220130081519371](https://home.innky.xyz:25566/images/image-20220130081519371.png)
+    ![image-20220130081519371](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130081519371.png)
 
   + 通知注解
 
@@ -272,7 +272,7 @@
 
       + 同一个目标方法可以被注入多次
 
-      + ![image-20220130083932554](https://home.innky.xyz:25566/images/image-20220130083932554.png)
+      + ![image-20220130083932554](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130083932554.png)
 
         通过getArgs()获取参数
 
@@ -280,45 +280,45 @@
 
     + @AfterReturning
 
-      + ![image-20220130084443227](https://home.innky.xyz:25566/images/image-20220130084443227.png)
+      + ![image-20220130084443227](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130084443227.png)
 
       + 方法定义
 
-        ![image-20220130084612844](https://home.innky.xyz:25566/images/image-20220130084612844.png)
+        ![image-20220130084612844](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130084612844.png)
 
         + 可以通过参数获取返回值
 
     + @Around
 
-      + ![image-20220130085314928](https://home.innky.xyz:25566/images/image-20220130085314928.png)
+      + ![image-20220130085314928](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130085314928.png)
 
       + 方法定义
 
-        ![image-20220130085243008](https://home.innky.xyz:25566/images/image-20220130085243008.png)
+        ![image-20220130085243008](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130085243008.png)
 
         + pgp.proceed()调用原先的方法
         + ProceedingJoinPoint继承自JoinPoint也可获取传入参数信息
 
     + @AfterThrowing
 
-      + ![image-20220130090056065](https://home.innky.xyz:25566/images/image-20220130090056065.png)
+      + ![image-20220130090056065](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130090056065.png)
 
       + 方法定义
 
-        ![image-20220130090035882](https://home.innky.xyz:25566/images/image-20220130090035882.png)
+        ![image-20220130090035882](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130090035882.png)
 
     + @After
 
-      + ![image-20220130090327764](https://home.innky.xyz:25566/images/image-20220130090327764.png)
+      + ![image-20220130090327764](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130090327764.png)
 
 + @PointCut
 
-  + ![image-20220130090712770](https://home.innky.xyz:25566/images/image-20220130090712770.png)
+  + ![image-20220130090712770](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130090712770.png)
   + 之后便可以使用下方的方法名()代替定义的切入点表达式
 
 + 自动代理生成器
 
-  + ![image-20220130081924236](https://home.innky.xyz:25566/images/image-20220130081924236.png)
+  + ![image-20220130081924236](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130081924236.png)
 
 + 测试
 
@@ -326,33 +326,33 @@
   + 自己的理解
     + 生成代理对象的时候似乎是直接把原来的目标对象覆盖了
   + 目标类没有接口则自动使用CGlib动态代理
-  + 期望在有接口时使用cglib![image-20220130091016832](https://home.innky.xyz:25566/images/image-20220130091016832.png)
+  + 期望在有接口时使用cglib![image-20220130091016832](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130091016832.png)
 
 ## 集成MyBatis
 
 + 步骤
 
-  ![image-20220130091924577](https://home.innky.xyz:25566/images/image-20220130091924577.png)
+  ![image-20220130091924577](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130091924577.png)
 
-  ![image-20220130091953754](https://home.innky.xyz:25566/images/image-20220130091953754.png)
+  ![image-20220130091953754](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130091953754.png)
 
 + 使用Spring创建Druid连接池
 
-  ![image-20220130093154895](https://home.innky.xyz:25566/images/image-20220130093154895.png)
+  ![image-20220130093154895](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130093154895.png)
 
 + 使用Spring创建SqlSessionFactory
 
-  ![image-20220130094435640](https://home.innky.xyz:25566/images/image-20220130094435640.png)
+  ![image-20220130094435640](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130094435640.png)
 
 + 使用Spring创建dao对象
 
-  ![image-20220130095003405](https://home.innky.xyz:25566/images/image-20220130095003405.png)
+  ![image-20220130095003405](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130095003405.png)
 
   spring整合mybatis时事务自动提交
 
 + 将数据库相关的配置单独放一个配置文件中，在主配置文件中引入
 
-  ![image-20220130095934352](https://home.innky.xyz:25566/images/image-20220130095934352.png)
+  ![image-20220130095934352](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130095934352.png)
 
   使用${jdbc.url}进行访问p77
 
@@ -360,15 +360,15 @@
 
 + 引入
 
-  ![image-20220130101405044](https://home.innky.xyz:25566/images/image-20220130101405044.png)
+  ![image-20220130101405044](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130101405044.png)
 
-  ![image-20220130101924360](https://home.innky.xyz:25566/images/image-20220130101924360.png)
+  ![image-20220130101924360](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130101924360.png)
 
-  ![image-20220130102214302](https://home.innky.xyz:25566/images/image-20220130102214302.png)
+  ![image-20220130102214302](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130102214302.png)
 
-  ![image-20220130102828317](https://home.innky.xyz:25566/images/image-20220130102828317.png)
+  ![image-20220130102828317](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130102828317.png)
 
-  ![image-20220130103144642](https://home.innky.xyz:25566/images/image-20220130103144642.png)
+  ![image-20220130103144642](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130103144642.png)
 
 
 ### 注解方式
@@ -381,17 +381,17 @@
 
     + 声明事务管理器对象
 
-      ![image-20220130105346237](https://home.innky.xyz:25566/images/image-20220130105346237.png)
+      ![image-20220130105346237](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130105346237.png)
 
     + 开启事务注解驱动（注意不要加错包中，是spring tx）
 
-      ![image-20220130105331220](https://home.innky.xyz:25566/images/image-20220130105331220.png)
+      ![image-20220130105331220](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130105331220.png)
 
     + 在**公共**方法上方添加注解@Transactional
 
-      ![image-20220130105320951](https://home.innky.xyz:25566/images/image-20220130105320951.png)
+      ![image-20220130105320951](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130105320951.png)
 
-      + ![image-20220130105803395](https://home.innky.xyz:25566/images/image-20220130105803395.png)
+      + ![image-20220130105803395](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130105803395.png)
 
 ### 配置文件方式
 
@@ -403,22 +403,22 @@
 
     + 加入aspectj依赖
 
-    + 声明事务管理器对象![image-20220130105346237](https://home.innky.xyz:25566/images/image-20220130105346237.png)
+    + 声明事务管理器对象![image-20220130105346237](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130105346237.png)
 
     + 声明方法需要的事务
 
-      ![image-20220130113212526](https://home.innky.xyz:25566/images/image-20220130113212526.png)
+      ![image-20220130113212526](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130113212526.png)
 
-      ![image-20220130113427200](https://home.innky.xyz:25566/images/image-20220130113427200.png)
+      ![image-20220130113427200](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130113427200.png)
 
     + 配置aop
 
-      ![image-20220130113752275](https://home.innky.xyz:25566/images/image-20220130113752275.png)
+      ![image-20220130113752275](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130113752275.png)
 
 ## Web与Spring
 
-使用监听器创建Spring容器对象![image-20220130115224873](https://home.innky.xyz:25566/images/image-20220130115224873.png)
+使用监听器创建Spring容器对象![image-20220130115224873](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130115224873.png)
 
 获取容器
 
-![image-20220130115730026](https://home.innky.xyz:25566/images/image-20220130115730026.png)
+![image-20220130115730026](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220130115730026.png)

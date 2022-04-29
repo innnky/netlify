@@ -13,5 +13,5 @@
   ```
 
 + 使用Fastjson
-  + ![image-20220228104824555](https://home.innky.xyz:25566/images/image-20220228104824555.png)
+  + ![image-20220228104824555](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220228104824555.png)
   + 

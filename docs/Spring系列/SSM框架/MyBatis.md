@@ -99,7 +99,7 @@
   
 + 使用mybatis访问数据库
 
-  ![image-20220128105453056](https://home.innky.xyz:25566/images/image-20220128105453056.png)
+  ![image-20220128105453056](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220128105453056.png)
 
 + IDEA出bug解决方案
 
@@ -117,7 +117,7 @@
 
 + 配置日志--在<configuration>中加入
 
-  ![image-20220128110403069](https://home.innky.xyz:25566/images/image-20220128110403069.png)
+  ![image-20220128110403069](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220128110403069.png)
 
 ## 第二章
 
@@ -139,7 +139,7 @@
 
 + 使用idea创建模板
 
-  ![image-20220128112523481](https://home.innky.xyz:25566/images/image-20220128112523481.png)
+  ![image-20220128112523481](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220128112523481.png)
 
 ## 第三章
 
@@ -192,11 +192,11 @@
 
     + 方式一:单独定义
 
-      ![image-20220128193651291](https://home.innky.xyz:25566/images/image-20220128193651291.png)
+      ![image-20220128193651291](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220128193651291.png)
 
     + 方式二:指定包
 
-      ![image-20220128193914005](https://home.innky.xyz:25566/images/image-20220128193914005.png)
+      ![image-20220128193914005](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220128193914005.png)
 
   + 使用别名可能导致名称不确定,因此推荐不使用别名
 
@@ -206,11 +206,11 @@
   
   + 使用步骤
   
-    ![image-20220128200315490](https://home.innky.xyz:25566/images/image-20220128200315490.png)
+    ![image-20220128200315490](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220128200315490.png)
     
     定义
     
-    ![image-20220128200351432](https://home.innky.xyz:25566/images/image-20220128200351432.png)
+    ![image-20220128200351432](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220128200351432.png)
     
     引用 resultMap="studentMap"
     
@@ -248,28 +248,28 @@
 
     + 循环基本类型
 
-      ![image-20220128203956980](https://home.innky.xyz:25566/images/image-20220128203956980.png)
+      ![image-20220128203956980](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220128203956980.png)
 
     + 循环对象
 
-      ![image-20220128204033990](https://home.innky.xyz:25566/images/image-20220128204033990.png)
+      ![image-20220128204033990](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220128204033990.png)
 
     + collection取list或者array
 
 + sql代码片段
 
   + 先定义`<sql id="xxxxx">复用代码片段</sql>`
-  + 后使用`<include refid="xxxxx">`![image-20220128204610152](https://home.innky.xyz:25566/images/image-20220128204610152.png)
+  + 后使用`<include refid="xxxxx">`![image-20220128204610152](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220128204610152.png)
 
 ## 配置文件
 
 + evironment配置项目
 
-  + ![image-20220128205519526](https://home.innky.xyz:25566/images/image-20220128205519526.png)
+  + ![image-20220128205519526](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220128205519526.png)
 
-  + ![image-20220128205801532](https://home.innky.xyz:25566/images/image-20220128205801532.png)
+  + ![image-20220128205801532](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220128205801532.png)
 
-    ![image-20220128205822682](https://home.innky.xyz:25566/images/image-20220128205822682.png)
+    ![image-20220128205822682](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220128205822682.png)
 
 + 属性配置文件
 
@@ -285,8 +285,8 @@
 
   + 使用
 
-    + ![image-20220128210155727](https://home.innky.xyz:25566/images/image-20220128210155727.png)
-    + ![image-20220128210257846](https://home.innky.xyz:25566/images/image-20220128210257846.png)
+    + ![image-20220128210155727](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220128210155727.png)
+    + ![image-20220128210257846](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220128210257846.png)
 
 + 指定mapper文件
 
@@ -294,7 +294,7 @@
 
   + 方式二:指定包名
 
-    ![image-20220128210818954](https://home.innky.xyz:25566/images/image-20220128210818954.png)
+    ![image-20220128210818954](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220128210818954.png)
 
     + 要求mapper文件与类同名(含大小写)
     + mapper文件要和接口在同一个包下
@@ -303,17 +303,17 @@
 
 + maven引入
 
-  ![image-20220128211409270](https://home.innky.xyz:25566/images/image-20220128211409270.png)
+  ![image-20220128211409270](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220128211409270.png)
 
 + mybatis添加插件(加在evionment前面)
 
-  ![image-20220128211500378](https://home.innky.xyz:25566/images/image-20220128211500378.png)
+  ![image-20220128211500378](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220128211500378.png)
 
-+ 查询前使用![image-20220128211757178](https://home.innky.xyz:25566/images/image-20220128211757178.png)
++ 查询前使用![image-20220128211757178](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220128211757178.png)
 
 ## 高级
 
-+ ![image-20220330153245105](https://home.innky.xyz:25566/images/image-20220330153245105.png)
++ ![image-20220330153245105](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220330153245105.png)
 
 + 
 
