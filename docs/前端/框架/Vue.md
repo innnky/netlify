@@ -244,3 +244,8 @@ slot（插槽）
 + 安装`npm install vue-router --save-dev`
 + 引入`importy VueRouter from 'vue-router'`
 + 显示声明使用`Vue.use(VueRouter)`
+
+asda
+
+asda
+
