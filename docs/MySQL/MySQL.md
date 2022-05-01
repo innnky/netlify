@@ -298,6 +298,8 @@ DQL：
   + 读已提交 read commited    ----> 不可重复读取问题 (oracle默认级别)
   + 可重复读 repeatable read    --->出现幻影读问题 (mysql默认级别) (永远读取的都是刚开启事务时的数据)
   + 序列化    serializable  串行   --->标级别上锁
+  + 实验: 
+    + RR下,两个事务同时操作同一个表的同一行会被阻塞,直到另一个事务提交
   + 隔离级别
     + 修改set global transation isolation level read uncommitted
     + 查看SELECT @@global.tx_isolation; 或者SELECT @@tx_isolation;
@@ -306,18 +308,48 @@ DQL：
 ### 索引
 
 + 索引可以单列也可以多字段联合
+
 + 索引需要排序
+
 + ![image-20220430151302602](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220430151302602.png)
+
 + 加索引条件:
   + 数据量大
   + 经常出现在where后面
   + 字段较少进行DML语句(增删改)
   + 唯一性较弱的字段索引意义不大,越唯一意义越大
   + 索引太多会降低效率,建议通过主键和unique查询
+  
++ 加索引条件:
+  
+  + 唯一性加索引
+  + 频繁分组或排序的列,排序列多个可以建组合索引
+  
++ 减少索引的条件:
+  
+  + 经常更新的表
+  + 数据量小的表
+  + 唯一性弱的列 如男/女
+  +  where条件中用不到的字段
+  + 参与计算的列
+  
 + 创建索引![image-20220430152407854](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220430152407854.png)
+
+  + 创建表时创建索引
+
+     ![image-20220501104223306](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220501104223306.png)
+
+  + 已经存在表上创建
+
+    + ![image-20220501104316684](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220501104316684.png)
+    + ![image-20220501104335546](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220501104335546.png)
+
 + 删除索引![image-20220430152417824](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220430152417824.png)
+
 + 分析是否SQL使用索引![image-20220430152507953](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220430152507953.png)
   + 看结果的type字段:Ref/All possible_keys字段
+  + ![image-20220501104750902](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220501104750902.png)
+
 + 索引失效
   + 以"%"开头的模糊查询不走索引,效率低
   + 使用or两边都要有索引才走索引,只有一遍有索引则失效,因此尽量少用or,(或许可以用union替代)

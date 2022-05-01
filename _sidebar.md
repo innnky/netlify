@@ -1,4 +1,7 @@
 - [首页](/)
+- 复习
+  - [MySQL](docs/复习/MySQL)
+  - [Java](docs/复习/Java)
 - Maven
   - [Maven基础](docs/Maven/Maven基础)
   - [琐碎的东西](docs/Maven/琐碎的东西)
