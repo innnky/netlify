@@ -336,4 +336,35 @@
 
 + 需要先创建一个容器,之后![image-20220410173000819](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220410173000819.png)
 + 类型注解->![image-20220410173211004](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220410173211004.png)
-+ 
+
+## JDK7
+
++ try-with-resource
+
+  + ```java
+    Scanner scanner = null;
+    try {
+        scanner = new Scanner(new File("test.txt"));
+        while (scanner.hasNext()) {
+            System.out.println(scanner.nextLine());
+        }
+    } catch (FileNotFoundException e) {
+        e.printStackTrace();
+    } finally {
+        if (scanner != null) {
+            scanner.close();
+        }
+    }
+    
+    //替换为
+    
+    try (Scanner scanner = new Scanner(new File("test.txt"))) {
+        while (scanner.hasNext()) {
+            System.out.println(scanner.nextLine());
+        }
+    } catch (FileNotFoundException fnfe) {
+        fnfe.printStackTrace();
+    }
+    ```
+
+  + 

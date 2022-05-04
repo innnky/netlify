@@ -8,3 +8,5 @@
 + ctrl alt v 快速生成![image-20220228103704146](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220228103704146.png)
 + ![image-20220228104039217](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220228104039217.png)
 + ctrl+o重写方法
++ 好用的IDEA插件https://chowdera.com/2021/12/20211204053942373n.html
++ 
