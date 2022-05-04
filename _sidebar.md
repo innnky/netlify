@@ -3,6 +3,7 @@
   - [Web开发](docs/复习/Web开发)
   - [MySQL](docs/复习/MySQL)
   - [Java](docs/复习/Java)
+  - [中间件](docs/复习/中间件)
 - Maven
   - [Maven基础](docs/Maven/Maven基础)
   - [琐碎的东西](docs/Maven/琐碎的东西)
@@ -18,6 +19,9 @@
     - [配置文件相关](docs/Spring系列/SSM框架/配置文件相关)
     - [SpringMVC](docs/Spring系列/SSM框架/SpringMVC)
     - [Spring框架](docs/Spring系列/SSM框架/Spring框架)
+  - SpringSecurity
+    - [SpringSecurity](docs/Spring系列/SpringSecurity/SpringSecurity)
+    - [Security授权](docs/Spring系列/SpringSecurity/Security授权)
   - SSM项目
     - [米米商城](docs/Spring系列/SSM项目/米米商城)
 - JavaSe
@@ -37,18 +41,14 @@
   - [gradle](docs/中间件/gradle)
   - [Redis](docs/中间件/Redis)
   - [REST API](docs/中间件/REST API)
-  - [SpringSecurity](docs/中间件/SpringSecurity)
   - [JWT](docs/中间件/JWT)
   - [MongoDB入门](docs/中间件/MongoDB入门)
-  - [Security授权](docs/中间件/Security授权)
-  - [Git](docs/中间件/Git)
   - [ElasticSearch](docs/中间件/ElasticSearch)
   - [Redis-cache](docs/中间件/Redis-cache)
   - [Docker](docs/中间件/Docker)
 - 纸质书笔记
   - [并发编程](docs/纸质书笔记/并发编程)
 - idea
-  - [idea](docs/idea/idea)
 - MySQL
   - [MySQL](docs/MySQL/MySQL)
 - 项目
@@ -70,6 +70,11 @@
   - [博客工具](docs/学习/博客工具)
 - 音乐
   - [chord](docs/音乐/chord)
+- 工具
+  - [Mockito](docs/工具/Mockito)
+  - [Github](docs/工具/Github)
+  - [idea](docs/工具/idea)
+  - [Git](docs/工具/Git)
 - 毕业设计
   - [CR](docs/毕业设计/CR)
   - [openstack](docs/毕业设计/openstack)
