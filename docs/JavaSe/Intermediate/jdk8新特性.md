@@ -367,4 +367,10 @@
     }
     ```
 
-  + 
+  + stream流合并多个列表
+  
+  + ```java
+    List<Student> students = classInfos.stream().
+            flatMap(classInfo -> studentService.getStudentsByClass(classInfo.getClassId()).stream())
+            .collect(Collectors.toList());
+    ```
