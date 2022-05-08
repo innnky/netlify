@@ -91,7 +91,6 @@
   - axure
     - [Axure](docs/前端/axure/Axure)
 - 杂项
-  - [fail](docs/杂项/fail)
   - SpringBoot课设
     - [SpringBoot](docs/杂项/SpringBoot课设/SpringBoot)
     - [terraria](docs/杂项/SpringBoot课设/terraria)

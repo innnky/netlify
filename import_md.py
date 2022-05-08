@@ -7,7 +7,7 @@ with open("_sidebar.md","w") as f:
         for path in my_file.iterdir():
             if path.name.startswith("."):
                 continue
-            if path.name.endswith(".md"):
+            if path.name.endswith(".md") and not path.name.endswith("fail.md"):
                 print("{}- [{}]({})".format(suffix,path.name[:-3],str(path)[:-3]), file=f)
             if path.is_dir():
                 if path.name == "杂项":
