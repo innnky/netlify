@@ -1,5 +1,6 @@
 - [首页](/)
 - 复习
+  - [设计模式](docs/复习/设计模式)
   - [Web开发](docs/复习/Web开发)
   - [MySQL](docs/复习/MySQL)
   - [Java](docs/复习/Java)
@@ -48,7 +49,6 @@
   - [Docker](docs/中间件/Docker)
 - 纸质书笔记
   - [并发编程](docs/纸质书笔记/并发编程)
-- idea
 - MySQL
   - [MySQL](docs/MySQL/MySQL)
 - 项目
@@ -68,15 +68,19 @@
   - [进度](docs/学习/进度)
   - [一些点](docs/学习/一些点)
   - [博客工具](docs/学习/博客工具)
-- 音乐
-  - [chord](docs/音乐/chord)
 - 工具
   - [Mockito](docs/工具/Mockito)
   - [Github](docs/工具/Github)
   - [idea](docs/工具/idea)
   - [Git](docs/工具/Git)
+- 艺术
+  - [electronic](docs/艺术/electronic)
+  - [ps](docs/艺术/ps)
+  - [chord](docs/艺术/chord)
+  - [旋律](docs/艺术/旋律)
 - 毕业设计
   - [CR](docs/毕业设计/CR)
+  - [毕设论文](docs/毕业设计/毕设论文)
   - [openstack](docs/毕业设计/openstack)
   - [UML](docs/毕业设计/UML)
 - 前端
@@ -99,5 +103,7 @@
     - [画图](docs/杂项/Markdown/画图)
     - [更多操作](docs/杂项/Markdown/更多操作)
     - [基本操作](docs/杂项/Markdown/基本操作)
+  - [M1](docs/杂项/M1)
   - [Unity](docs/杂项/Unity)
   - [科目1](docs/杂项/科目1)
+  - [正则](docs/杂项/正则)

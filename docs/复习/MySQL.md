@@ -15,7 +15,7 @@
 
 ## 索引
 
-+ mysql在memory/heap引擎中支持hash索引
++ mysql在memory引擎中支持hash索引
 + 优点
   + 唯一索引保证数据的唯一性
   + 加快查询速度

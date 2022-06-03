@@ -402,3 +402,11 @@ DQL：
 + 一对一设计------->外键+UNIQUE![image-20220430161111724](https://cdn.jsdelivr.net/gh/innnky/images@master/uPic/image-20220430161111724.png)
 
 + 有的时候可能会存在冗余，但是为了减少表的连接次数，这样做也是合理的!
+
+  + Docker+ mysql备份数据
+
+    ```shell
+    docker exec -it 9d12fdadc5bd8f9729a86aef3a4945ad47da8ecf252680c703f96f60143417c4 mysqldump -uroot -p000508 graduation_design > /Users/xingyijin/graduation.sql
+    ```
+
+    
