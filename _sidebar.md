@@ -78,6 +78,7 @@
   - [ps](docs/艺术/ps)
   - [chord](docs/艺术/chord)
   - [旋律](docs/艺术/旋律)
+  - [Books](docs/艺术/Books)
 - 毕业设计
   - [CR](docs/毕业设计/CR)
   - [毕设论文](docs/毕业设计/毕设论文)
@@ -103,6 +104,7 @@
     - [画图](docs/杂项/Markdown/画图)
     - [更多操作](docs/杂项/Markdown/更多操作)
     - [基本操作](docs/杂项/Markdown/基本操作)
+  - [crack](docs/杂项/crack)
   - [M1](docs/杂项/M1)
   - [Unity](docs/杂项/Unity)
   - [科目1](docs/杂项/科目1)
