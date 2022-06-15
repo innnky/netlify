@@ -71,6 +71,7 @@
 - 工具
   - [Mockito](docs/工具/Mockito)
   - [Github](docs/工具/Github)
+  - [pip](docs/工具/pip)
   - [idea](docs/工具/idea)
   - [Git](docs/工具/Git)
 - 艺术
@@ -79,6 +80,7 @@
   - [chord](docs/艺术/chord)
   - [旋律](docs/艺术/旋律)
   - [Books](docs/艺术/Books)
+  - [图解作曲配乐](docs/艺术/图解作曲配乐)
 - 毕业设计
   - [CR](docs/毕业设计/CR)
   - [毕设论文](docs/毕业设计/毕设论文)
@@ -107,5 +109,6 @@
   - [crack](docs/杂项/crack)
   - [M1](docs/杂项/M1)
   - [Unity](docs/杂项/Unity)
+  - [other](docs/杂项/other)
   - [科目1](docs/杂项/科目1)
   - [正则](docs/杂项/正则)
