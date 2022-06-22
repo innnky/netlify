@@ -73,6 +73,7 @@
   - [Github](docs/工具/Github)
   - [pip](docs/工具/pip)
   - [idea](docs/工具/idea)
+  - [Linux](docs/工具/Linux)
   - [Git](docs/工具/Git)
 - 艺术
   - [electronic](docs/艺术/electronic)
@@ -107,8 +108,10 @@
     - [更多操作](docs/杂项/Markdown/更多操作)
     - [基本操作](docs/杂项/Markdown/基本操作)
   - [crack](docs/杂项/crack)
+  - [MC](docs/杂项/MC)
   - [M1](docs/杂项/M1)
   - [Unity](docs/杂项/Unity)
   - [other](docs/杂项/other)
   - [科目1](docs/杂项/科目1)
+  - [电脑](docs/杂项/电脑)
   - [正则](docs/杂项/正则)
