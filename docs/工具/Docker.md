@@ -44,6 +44,7 @@
   + --limit 5 限制5条
 + docker pull 镜像[:TAG] 拉取远程镜像
 + docker system df 系统空间用量信息
++ docker stats
 + docker rmi 
   + -f 强制删除
   + -f 镜像id1:Tag 镜像id2:Tag 
@@ -58,6 +59,7 @@
   + <img src="https://test1.jsdelivr.net/gh/innnky/images2@main/uPic/07/image-20220714161246136.png" alt="image-20220714161246136" style="zoom:33%;" /> 
   + --name=xxxxx (等效于--name xxxxx) 指定容器名称
   + -p 8888:8080 左边是宿主机端口(外),右边是docker(内)
+  + --restart=always 该容器随docker自动启动
   + 例: docker run -it centos /bin/bash :以交互模式运行centos 并执行bash
   + **实践**
     + command 对每一个镜像应该有一个默认值
@@ -292,4 +294,31 @@
 
   <img src="https://test1.jsdelivr.net/gh/innnky/images2@main/uPic/07/image-20220716173857199.png" alt="image-20220716173857199" style="zoom:33%;" />
 
-+ 版本
++ 两个要素
+
+  + 服务service
+  + 工程project
+
++ 三步骤
+
+  + 编写Dockerfile 构建成为镜像
+  + 编写docker-compose.yml定义业务单元,安排各个容器
+  + 使用docker-compose up命令启动并运行整个应用,一键部署
+
++ 常用命令
+
+  ![image-20220717094646091](https://test1.jsdelivr.net/gh/innnky/images2@main/uPic/07/image-20220717094646091.png)
+
++ 例
+
+  <img src="https://test1.jsdelivr.net/gh/innnky/images2@main/uPic/07/image-20220717100930540.png" alt="image-20220717100930540" style="zoom:33%;" /> <img src="https://test1.jsdelivr.net/gh/innnky/images2@main/uPic/07/image-20220717101723675.png" alt="image-20220717101723675" style="zoom:33%;" />
+
+## portainer
+
++ 启动<img src="https://test1.jsdelivr.net/gh/innnky/images2@main/uPic/07/image-20220717101927640.png" alt="image-20220717101927640" style="zoom:67%;" />
++ 使用9000端口访问
+
+## 容器监控
+
++ <img src="https://test1.jsdelivr.net/gh/innnky/images2@main/uPic/07/image-20220717103846956.png" alt="image-20220717103846956" style="zoom:20%;" /> 
++ 

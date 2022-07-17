@@ -41,6 +41,7 @@
   - [RabbitMq](docs/中间件/RabbitMq)
   - [gradle](docs/中间件/gradle)
   - [Redis](docs/中间件/Redis)
+  - [Nginx](docs/中间件/Nginx)
   - [REST API](docs/中间件/REST API)
   - [JWT](docs/中间件/JWT)
   - [MongoDB入门](docs/中间件/MongoDB入门)
