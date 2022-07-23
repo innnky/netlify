@@ -14,6 +14,7 @@
     - [Thymeleaf](docs/Spring系列/SpringBoot/Thymeleaf)
     - [琐碎的知识](docs/Spring系列/SpringBoot/琐碎的知识)
   - SpringCloud
+    - [尚硅谷SpringCloud](docs/Spring系列/SpringCloud/尚硅谷SpringCloud)
     - [SpringCloud](docs/Spring系列/SpringCloud/SpringCloud)
   - SSM框架
     - [MyBatis](docs/Spring系列/SSM框架/MyBatis)
@@ -76,7 +77,6 @@
   - [idea](docs/工具/idea)
   - [Linux](docs/工具/Linux)
   - [Git](docs/工具/Git)
-  - [Docker](docs/工具/Docker)
 - 艺术
   - [electronic](docs/艺术/electronic)
   - [ps](docs/艺术/ps)
