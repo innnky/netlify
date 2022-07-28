@@ -1,5 +1,7 @@
 # Docker
 
+国内镜像一键安装 curl -sSL https://get.daocloud.io/docker | sh
+
 ## 引入
 
 + 容器与虚拟器区别

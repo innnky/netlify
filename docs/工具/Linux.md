@@ -102,6 +102,7 @@
 ### 文件目录相关指令
 
 + pwd  cd
++ !du -lh --max-depth=1 列出当前目录下所有文件夹的大小(递归)
 + ls
   + -a 全部文件
   + -l 单行显示
@@ -183,7 +184,7 @@
 + gzip/guzip( gzip /home/hello.txt)
 + zip/unzip
   + ![image-20220706114452505](https://test1.jsdelivr.net/gh/innnky/images2@main/uPic/07/image-20220706114452505.png)
-+ tar
++ `
   + ![image-20220706114902612](https://test1.jsdelivr.net/gh/innnky/images2@main/uPic/07/image-20220706114902612.png)
 
 ## 组管理和权限管理
