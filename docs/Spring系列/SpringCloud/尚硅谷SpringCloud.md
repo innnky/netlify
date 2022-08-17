@@ -97,7 +97,7 @@
   + ```
     server:
       port: 7001
-    
+    .+\|1[1-9]\|\n
     spring:
       application:
         name: cloud-eureka-server7001
@@ -321,7 +321,7 @@
     ConnectTimeout: 5000
   ```
 
-+ 日志配置
++ 日志配置:类似于mybatis开启日志监控?
 
   + 日志级别 ![image-20220723173528097](https://test1.jsdelivr.net/gh/innnky/images2@main/uPic/07/image-20220723173528097.png)
 

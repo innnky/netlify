@@ -325,3 +325,19 @@
 + <img src="https://test1.jsdelivr.net/gh/innnky/images2@main/uPic/07/image-20220717103846956.png" alt="image-20220717103846956" style="zoom:20%;" /> 
 + 
 
+## 补充
+
++ 导出镜像到文件![image-20220729152754688](https://test1.jsdelivr.net/gh/innnky/images2@main/uPic/07/image-20220729152754688.png)
+
++ 导入![image-20220729152824099](https://test1.jsdelivr.net/gh/innnky/images2@main/uPic/07/image-20220729152824099.png)
+
++ 为虚悬镜像添加tag
+
+  ![image-20220729152840526](https://test1.jsdelivr.net/gh/innnky/images2@main/uPic/07/image-20220729152840526.png)
+  
++ 修改已经创建好的镜像 如添加自启动参数 --restart=always 
+
+  `docker update container_name --restart=always`
+  
++ 
+

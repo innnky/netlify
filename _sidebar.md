@@ -56,9 +56,11 @@
   - [MySQL](docs/MySQL/MySQL)
 - 项目
   - [ruoyi](docs/项目/ruoyi)
+  - [谷粒商城前端](docs/项目/谷粒商城前端)
   - [毕业设计](docs/项目/毕业设计)
   - [博客项目实战](docs/项目/博客项目实战)
   - [myBlog](docs/项目/myBlog)
+  - [谷粒商城](docs/项目/谷粒商城)
   - community
     - [Community](docs/项目/community/Community)
   - [CRM](docs/项目/CRM)

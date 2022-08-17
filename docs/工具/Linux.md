@@ -184,7 +184,7 @@
 + gzip/guzip( gzip /home/hello.txt)
 + zip/unzip
   + ![image-20220706114452505](https://test1.jsdelivr.net/gh/innnky/images2@main/uPic/07/image-20220706114452505.png)
-+ `
++ tar
   + ![image-20220706114902612](https://test1.jsdelivr.net/gh/innnky/images2@main/uPic/07/image-20220706114902612.png)
 
 ## 组管理和权限管理

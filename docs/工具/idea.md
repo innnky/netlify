@@ -28,4 +28,14 @@
 
   ![image-20220719155405063](https://test1.jsdelivr.net/gh/innnky/images2@main/uPic/07/image-20220719155405063.png)
 
+  + 同一个服务为模板复制一份启动集群<img src="https://test1.jsdelivr.net/gh/innnky/images2@main/uPic/07/image-20220728195728118.png" alt="image-20220728195728118" style="zoom:25%;" /> 
+  
+  之前是手动输入命令add到git中,idea也可以add,在这里统一add,会根据gitignore进行匹配![image-20220809100020589](https://test1.jsdelivr.net/gh/innnky/images2@main/uPic/08/image-20220809100020589.png)
+  
+  + //TODO XXXX 可以在IDEA下方看到
+  
+  一次启动多个微服务,创建一个聚合![image-20220817094956588](https://test1.jsdelivr.net/gh/innnky/images2@main/uPic/08/image-20220817094956588.png)
+  
+  
+  
   
